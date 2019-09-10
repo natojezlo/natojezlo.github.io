@@ -56,7 +56,12 @@
 	<div class="banright" >
 	<h3>Хотите записаться<br/> 
 	на прием?</h3>
-	<form class="example" action="mail/sendmail.php" method="POST">
+	<form >
+	<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
 	<label>Ваше имя</label><br/>
 	<input required name="Ваше имя" id="target" type="text" placeholder=""/><br/>
 	<label>Ваш телефон</label><br/>
@@ -159,10 +164,7 @@
 
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.sendmail.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
@@ -214,37 +216,28 @@ $('a[href*="#"]').click(function() {
 	</script>
 
 <script>
-var example = $('form.example');
 
-// Успешная отправка формы
-example.on('success.sml', function() {
+$(document).ready(function() {
 
-	// Открыть динамический popup
-	$.fancybox.open('<p>Спасибо! Ваша заявка успешно отправлена!</p>');
-
-	// Закрыть окно через 5 сек.
-	setTimeout(function() { $.fancybox.close() }, 5000);
-
-});
-
-// Ошибка при отправке AJAX-запроса
-example.on('serverError.sml', function(e, instance, form, response) {
-
-	$.fancybox.open('<p>Ошибка при отправке AJAX-запроса!</p>' + '<br>' + response);
-	setTimeout(function() { $.fancybox.close() }, 5000);
-
-});
-
-// Ошибка на сервере при отправке формы
-example.on('ajaxError.sml', function(e, instance, form, response) {
-
-	$.fancybox.open('<p>Ошибка на сервере при отправке формы!</p>' + '<br>' + response);
-	setTimeout(function() { $.fancybox.close() }, 5000);
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "https://natojezlo.github.io/artnails/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 
 });
 
-// Инициализация...
-example.sendMail();
 </script>
 
 <script>
