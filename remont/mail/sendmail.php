@@ -18,12 +18,12 @@ $after_table = '<i style="color:#bbb;font-size:12px">Сообщение отпр
 $sep = ', '; // Разделитель между значениями (использ. при форм. HTML-содержимого письма)
 
 // Настройки SMTP:
-$smtp_host     = 'smtp.mail.yahoo.com'; // SMPT-адрес сервера
+$smtp_host     = 'smtp.gmail.com'; // SMPT-адрес сервера
 $smtp_port     = 465; // TCP-порт
 $smtp_secure   = 'ssl'; // SMTP TLS/SSL 
 $smtp_auth     = true; // SMPT-аутентификация
-$smtp_username = 'klekovkinandrey@yahoo.com'; // Почтовый ящик, с которого будут отправляться письма
-$smtp_password = 'mainkampf14882285'; // Пароль почтового ящика, с которого будут отправляться письма
+$smtp_username = 'aida.web.studio@gmail.com'; // Почтовый ящик, с которого будут отправляться письма
+$smtp_password = '14882285'; // Пароль почтового ящика, с которого будут отправляться письма
 
 // Перенаправления на страницы (если JS отключен):
 $success_page = './success.html'; // При успешной отправке

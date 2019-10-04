@@ -187,11 +187,11 @@ box-shadow: 5px 5px 8px rgba(0,0,0,0.3)
 
 #footer{background: #1b1714;}
 .footer{max-width: 1070px; margin:0 auto; font-family: 'Roboto', sans-serif; padding: 40px 0;  }
-.footertop{ border-bottom: 1px solid #FFF; text-align: right; padding-bottom: 20px;}
+.footertop{ border-bottom: 1px solid #FFF; text-align: right; padding-bottom: 20px; font-size: 16px;}
 .footertop p{color: #FFF;  font-weight: 100; font-style: italic;}
 .footertop p a{color: #FFF; font-style: normal; font-weight: 500; text-decoration: none; }
 
-.footerbottom{text-align: right; color: #FFF; padding-top: 20px;}
+.footerbottom{text-align: right; color: #FFF; padding-top: 20px; font-size: 18px;}
 
 .lb-number{display:none!important;}
 
@@ -210,3 +210,20 @@ box-shadow: 5px 5px 8px rgba(0,0,0,0.3)
 }
 
 #pull{display: none;}
+
+
+#toTop {
+width:100px;
+border:1px solid #ccc;
+background:#f7f7f7;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+}
