@@ -1,0 +1,121 @@
+// main: style.less
+
+#diplom{
+    margin-bottom: 65px;
+    .diplom{
+        max-width: 1120px;
+        margin: 0 auto;
+        
+        h3{
+            display: inline;
+            position: relative;
+            margin-left: 50px;
+            
+            &:before{
+                content: "";
+                position: absolute;
+                left: -50px;
+                top:50%;
+                transform: translateY(-57%);
+                width: 219px;
+                height: 122px;
+                background: url(../img/r2.png);
+                background-size: cover;
+            }
+            span{
+                font-size: 51px;
+                text-transform: uppercase;
+                font-family: 'DIN Pro Cond';
+                position: relative;
+            
+            }
+        }
+        .owl-carousel{
+            padding-top: 100px;
+            .owl-dots{
+                padding-top: 35px;
+                text-align: center;
+                .owl-dot{
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 14px;
+                    background: #7f7f7f;
+                    margin: 0 7px;
+                }
+                .active{
+                    background: #facf00;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1041px){
+
+    #diplom{
+        margin-bottom: 65px;
+        .diplom{
+            padding: 0 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+
+
+
+    #diplom{
+        margin-bottom: 65px;
+        .diplom{
+            padding: 0 20px;
+            margin: 0 auto;
+            
+            h3{
+                display: inline;
+                position: relative;
+                margin-left: 50px;
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -50px;
+                    top:50%;
+                    transform: translateY(-57%);
+                    width: 150px;
+                    height: 84px;
+                    background: url(../img/r2.png);
+                    background-size: cover;
+                }
+                span{
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-family: 'DIN Pro Cond';
+                    position: relative;
+                
+                }
+            }
+            .owl-carousel{
+                padding-top: 40px;
+                .owl-dots{
+                    padding-top: 35px;
+                    text-align: center;
+                    .owl-dot{
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 14px;
+                        background: #7f7f7f;
+                        margin: 0 7px;
+                    }
+                    .active{
+                        background: #facf00;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}//

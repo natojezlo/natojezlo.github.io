@@ -1,0 +1,159 @@
+// main: style.less
+
+
+#vid{
+    background: url(../img/vid.png) top right no-repeat;
+    padding-bottom: 130px;
+    .vid{
+        max-width: 1120px;
+        margin: 0 auto;
+        text-align: center;
+        h3{
+            display: inline;
+            position: relative;
+            
+            &:before{
+                content: "";
+                position: absolute;
+                left: -50px;
+                top:50%;
+                transform: translateY(-57%);
+                width: 219px;
+                height: 122px;
+                background: url(../img/r2.png);
+                background-size: cover;
+            }
+            span{
+                font-size: 51px;
+                text-transform: uppercase;
+                font-family: 'DIN Pro Cond';
+                position: relative;
+            
+            }
+        }
+        .vid-list{
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+           
+            
+            a{
+               background: #feed00;
+               padding: 5px;
+               border: 5px solid #feed00;
+               display: grid;
+               align-items: center;
+               font-size: 15px;
+               text-transform: uppercase;
+               text-decoration: none;
+               color: #000;
+               min-height: 95px;
+               transition: 0.5s background;
+               
+               
+               &:hover{
+                   background: #FFF;
+               }
+               &:nth-child(13){
+                grid-column-start: 2;
+                grid-column-end: 3;
+           }
+               &:nth-child(14){
+                    grid-column-start: 3;
+                    grid-column-end: 4;
+               }
+               
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:1140px){
+    #vid{
+        padding:0 20px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+
+
+
+    #vid{
+        background:none;
+        margin-bottom: 50px;
+        .vid{
+            
+            text-align: center;
+            h3{
+                display: inline;
+                position: relative;
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -50px;
+                    top:50%;
+                    transform: translateY(-57%);
+                    width: 150px;
+                    height: 84px;
+                    background: url(../img/r2.png);
+                    background-size: cover;
+                }
+                span{
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-family: 'DIN Pro Cond';
+                    position: relative;
+                
+                }
+            }
+            .vid-list{
+                padding-top: 40px;
+                display: block;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+               
+                
+                a{
+                   background: #feed00;
+                   padding: 10px;
+                   border: 5px solid #feed00;
+                   display: grid;
+                   align-items: center!important;
+                   font-size: 16px;
+                   text-transform: uppercase;
+                   text-decoration: none;
+                   color: #000;
+                   min-height: 95px;
+                   transition: 0.5s background;
+                   margin-bottom: 10px;
+                   text-align: center;
+                   
+                   
+                   &:hover{
+                       background: #FFF;
+                   }
+                   &:nth-child(13){
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+               }
+                   &:nth-child(14){
+                        grid-column-start: 3;
+                        grid-column-end: 4;
+                   }
+                   
+                }
+            }
+        }
+    }
+
+
+
+}//

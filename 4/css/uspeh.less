@@ -1,0 +1,187 @@
+// main: style.less
+
+
+#uspeh{
+    padding: 90px 0 70px 0;
+    .uspeh{
+        max-width: 1140px;
+        margin: 0 auto;
+        h3{
+            display: inline;
+            position: relative;
+            
+            
+            &:before{
+                content: "";
+                position: absolute;
+                right: -35px;
+                top:50%;
+                transform: translateY(-57%);
+                width: 219px;
+                height: 122px;
+                background: url(../img/r2.png);
+                background-size: cover;
+            }
+            span{
+                font-size: 51px;
+                text-transform: uppercase;
+                font-family: 'DIN Pro Cond';
+                position: relative;
+            
+            }
+        }
+        .center{
+            text-align: center;
+            padding-top: 65px;
+        }
+        .button{
+            background: #ffff00;
+            text-transform: uppercase;
+            box-shadow: 1px 3px 0px #a2a2a2;
+            padding: 14px 35px;
+            color: #000;
+            text-decoration: none;
+            margin: 0 auto;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+
+        .newcarousel{
+            padding: 0 65px;
+            padding-top: 85px;
+            
+            .item{
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .owl-nav{
+                .owl-prev{
+                    border-top: 25px solid transparent;
+                    border-right:40px solid #feed00;
+                    border-bottom: 25px solid transparent;
+                    position: absolute;
+                    left: 0;
+                    top: 45%;
+                    &:hover{
+                        opacity: 0.6;
+                    }
+                    
+                }
+                .owl-next{
+                    border-top: 25px solid transparent;
+                    border-left:40px solid #feed00;
+                    border-bottom: 25px solid transparent;
+                    position: absolute;
+                    right: 0;
+                    top: 45%;
+                    &:hover{
+                        opacity: 0.6;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:1140px){
+
+    #uspeh{
+        padding: 90px 20px 70px 20px;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+
+
+    #uspeh{
+        padding: 50px 20px 70px 20px;
+        .uspeh{
+            max-width: 1140px;
+            margin: 0 auto;
+            h3{
+                display: inline;
+                position: relative;
+                
+                
+                &:before{
+                    content: "";
+                    position: absolute;
+                    right: -35px;
+                    top:50%;
+                    transform: translateY(-57%);
+                    width: 150px;
+                    height: 84px;
+                    background: url(../img/r2.png);
+                    background-size: cover;
+                }
+                span{
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    font-family: 'DIN Pro Cond';
+                    position: relative;
+                
+                }
+            }
+            .center{
+                text-align: center;
+                padding-top: 35px;
+            }
+            .button{
+                background: #ffff00;
+                text-transform: uppercase;
+                box-shadow: 1px 3px 0px #a2a2a2;
+                padding: 14px 35px;
+                color: #000;
+                text-decoration: none;
+                margin: 0 auto;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+    
+            .newcarousel{
+                padding: 0 65px;
+                padding-top: 45px;
+                
+                .item{
+                    text-align: center;
+                    font-size: 18px;
+                }
+    
+                .owl-nav{
+                    .owl-prev{
+                        border-top: 25px solid transparent;
+                        border-right:40px solid #feed00;
+                        border-bottom: 25px solid transparent;
+                        position: absolute;
+                        left: 0;
+                        top: 45%;
+                        &:hover{
+                            opacity: 0.6;
+                        }
+                        
+                    }
+                    .owl-next{
+                        border-top: 25px solid transparent;
+                        border-left:40px solid #feed00;
+                        border-bottom: 25px solid transparent;
+                        position: absolute;
+                        right: 0;
+                        top: 45%;
+                        &:hover{
+                            opacity: 0.6;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

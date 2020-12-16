@@ -1,0 +1,140 @@
+// main: style.less
+
+
+#shablon{
+    background: #feed00;
+    
+    .shablon{
+        padding: 40px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        &:before{
+            content:"";
+            position: absolute;
+            right:-250px;
+            bottom:-5px;
+            width: 580px;
+            height: 534px;
+            background: url(../img/arct.png);
+        }
+        .shablon-razdel{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            grid-gap: 45px;
+            margin-bottom: 40px;
+            .sh-left{
+                h2{
+                    font-size: 51px;
+                    font-family: 'DIN Pro Cond';
+                    text-transform: uppercase;
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size: 19px;
+                    font-style: italic;
+                }
+
+            }
+            .sh-right{
+                border: 5px solid #FFF;
+                padding: 20px 30px;
+
+            }
+        }
+        .shablon-links{
+            ul{
+                li{
+                    line-height: 30px;
+                    a{
+                        color: #000;
+                        padding-left: 37px;
+                        background: url(../img/link.png) left center no-repeat;
+                        text-decoration: none;
+                        transition: 0.5s color, 0.5s background-position;
+                        &:hover{
+                            color:red;
+                            background-position: 5px center;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1140px){
+    .shablon{
+        padding: 20px 20px;
+        &:before{
+            display: none!important;
+        }
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+
+
+    #shablon{
+        background: #feed00;
+        
+        .shablon{
+            padding: 20px 20px;
+            max-width: 1140px;
+            margin: 0 auto;
+            position: relative;
+            &:before{
+                display: none;
+            }
+            .shablon-razdel{
+                position: relative;
+                display: block;
+               
+                margin-bottom: 40px;
+                .sh-left{
+                    h2{
+                        font-size: 24px;
+                        font-family: 'DIN Pro Cond';
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-style: italic;
+                        margin-bottom: 20px;
+                    }
+    
+                }
+                .sh-right{
+                    border: 5px solid #FFF;
+                    padding: 20px 30px;
+    
+                }
+            }
+            .shablon-links{
+                ul{
+                    li{
+                        line-height: 30px;
+                        a{
+                            color: #000;
+                            padding-left: 25px;
+                            background: url(../img/link.png) left center no-repeat;
+                            text-decoration: none;
+                            transition: 0.5s color, 0.5s background-position;
+                            &:hover{
+                                color:red;
+                                background-position: 5px center;
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+
+}

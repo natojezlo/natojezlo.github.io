@@ -1,0 +1,211 @@
+// main: style.less
+
+footer{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 75px 0 45px 0;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.6fr 1fr 0.8fr;
+    align-items: center;
+    ul{
+        li{
+            a{
+                font-size: 18px;
+                color: #000;
+                text-decoration: none;
+                font-family: 'DIN Pro Cond';
+                line-height: 16px;
+                text-transform: uppercase;
+                &:hover{
+                    color: #feed00;
+                }
+            }
+        }
+    }
+
+
+
+    .footer-zakaz{
+        a{
+            font-family: 'DIN Pro Cond';
+            font-size: 18px;
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+            border:2px solid #000;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            transition: 0.5s color;
+        
+            &:hover{
+                background:#feed00;
+                &:after{
+                    border-bottom: 13px solid #feed00; 
+                    border-left: 13px solid #feed00;
+                }
+                
+            }
+            &:before{
+                position: absolute;
+                content: "";
+                left: -2px;
+                top:-30px;
+                border: 15px solid transparent; 
+                border-bottom: 15px solid #000; 
+                border-left: 15px solid #000;
+                
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0px;
+                top:-24px;
+                border: 12px solid transparent; 
+                border-bottom: 13px solid #FFF; 
+                border-left: 13px solid #FFF;
+            
+                
+            }
+        }
+    }
+
+    .footer-phone{
+        a{
+            font-family: 'DIN Pro Cond';
+            font-size: 33px;
+            color: #000;
+            text-decoration: none;
+            transition: 0.5s color;
+            &:hover{
+                color:#feed00;
+                
+            }
+        }
+    }
+
+
+}
+
+
+#copyright{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 45px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1141px){
+
+    footer{
+        padding:75px 20px 45px 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px){
+
+
+    footer{
+       
+        display: block;
+        div{
+            margin-bottom: 40px;
+        }
+       
+        ul{
+            li{
+                a{
+                    font-size: 18px;
+                    color: #000;
+                    text-decoration: none;
+                    font-family: 'DIN Pro Cond';
+                    line-height: 16px;
+                }
+            }
+        }
+    
+    
+    
+        .footer-zakaz{
+            a{
+                font-family: 'DIN Pro Cond';
+                font-size: 18px;
+                color: #000;
+                text-decoration: none;
+                text-transform: uppercase;
+                display: block;
+                border:2px solid #000;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+                transition: 0.5s color;
+                display: none;
+            
+                &:hover{
+                    background:#feed00;
+                    &:after{
+                        border-bottom: 13px solid #feed00; 
+                        border-left: 13px solid #feed00;
+                    }
+                    
+                }
+                &:before{
+                    position: absolute;
+                    content: "";
+                    left: -2px;
+                    top:-30px;
+                    border: 15px solid transparent; 
+                    border-bottom: 15px solid #000; 
+                    border-left: 15px solid #000;
+                    
+                }
+                &:after{
+                    position: absolute;
+                    content: "";
+                    left: 0px;
+                    top:-24px;
+                    border: 12px solid transparent; 
+                    border-bottom: 13px solid #FFF; 
+                    border-left: 13px solid #FFF;
+                
+                    
+                }
+            }
+        }
+    
+        .footer-phone{
+            a{
+                font-family: 'DIN Pro Cond';
+                font-size: 33px;
+                color: #000;
+                text-decoration: none;
+                transition: 0.5s color;
+                &:hover{
+                    color:#feed00;
+                    
+                }
+            }
+        }
+    
+    
+    }
+    
+    
+    #copyright{
+        text-align: center;
+        font-size: 14px;
+        padding-bottom: 45px;
+    }
+
+}

@@ -1,0 +1,122 @@
+// main: style.less
+
+
+#pravo{
+    padding: 85px 0 55px 0;
+    .pravo{
+        max-width: 1140px;
+        margin: 0 auto;
+        h1{
+            font-size: 51px;
+            font-family: 'DIN Pro Cond';
+            text-transform: uppercase;
+            margin-bottom: 65px;
+        }
+        p{
+            margin-bottom: 27px;
+
+        }
+        .center{
+            text-align: center;
+        }
+        ul{
+            margin-bottom: 27px;
+            li{
+                padding-left: 30px;
+                position: relative;
+                line-height: 25px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top:50%;
+                    transform: translateY(-50%);
+                    width: 12px;
+                    height: 12px;
+                    background: #ffde11;
+                    
+                }
+
+            }
+        }
+        .button{
+            background: #ffff00;
+            text-transform: uppercase;
+            box-shadow: 1px 3px 0px #a2a2a2;
+            padding: 14px 70px;
+            color: #000;
+            text-decoration: none;
+            margin: 0 auto;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1140px){
+    #pravo{
+        padding: 30px 20px 30px 20px;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+
+    #pravo{
+        padding: 30px 20px 30px 20px;
+        .pravo{
+            max-width: 1140px;
+            margin: 0 auto;
+            h1{
+                font-size: 24px;
+                font-family: 'DIN Pro Cond';
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+            p{
+                margin-bottom: 27px;
+    
+            }
+            .center{
+                text-align: center;
+            }
+            ul{
+                margin-bottom: 27px;
+                li{
+                    padding-left: 30px;
+                    position: relative;
+                    line-height: 25px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top:50%;
+                        transform: translateY(-50%);
+                        width: 12px;
+                        height: 12px;
+                        background: #ffde11;
+                        
+                    }
+    
+                }
+            }
+            .button{
+                background: #ffff00;
+                text-transform: uppercase;
+                box-shadow: 1px 3px 0px #a2a2a2;
+                padding: 14px 40px;
+                color: #000;
+                text-decoration: none;
+                margin: 0 auto;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+}

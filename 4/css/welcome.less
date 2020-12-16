@@ -1,0 +1,161 @@
+// main: style.less
+
+#welcome{
+    max-width: 1095px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    padding: 55px 0;
+    grid-gap: 55px;
+    margin-bottom: 50px;
+    .w-photo{
+       img{
+           transition:0.5s box-shadow;
+           &:hover{
+               box-shadow: 15px 15px 20px rgba(0,0,0,0.2);
+           }
+       }
+
+    }
+    .w-text{
+        padding-top: 25px;
+        h3{
+            font-size: 36px;
+            text-transform: uppercase;
+            font-family: 'DIN Pro Cond';
+            padding: 7px;
+            background: #feed00;
+            margin-left: -140px;
+            display: inline;
+        }
+        div{
+            padding-top: 20px;
+        }
+        p{
+            margin-top: 35px;
+            font-size: 16px;
+        }
+        a{
+            font-family: 'DIN Pro Cond';
+            font-size: 23px;
+            color: #000;
+            text-decoration: none;
+            border:2px solid #feed00;
+            text-align: center;
+            padding: 4px 24px;
+            position: relative;
+            transition: 0.5s color;
+            float: right;
+            transition: 0.5s color;
+            &:hover{
+                background:#feed00;
+                &:after{
+                
+                    border: 6px solid transparent; 
+                    border-bottom: 6px solid #feed00; 
+                    border-left: 6px solid #feed00;
+                    
+                }
+            }
+            &:before{
+                position: absolute;
+                content: "";
+                left: -2px;
+                top:-14px;
+                border: 7px solid transparent; 
+                border-bottom: 7px solid #feed00; 
+                border-left: 7px solid #feed00;
+                
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                left: 0px;
+                top:-8px;
+                border: 6px solid transparent; 
+                border-bottom: 6px solid #FFF; 
+                border-left: 6px solid #FFF;
+            
+                
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width:768px){
+
+
+    #welcome{
+        
+        margin: 0 auto;
+        display: block;
+        padding: 55px 20px;
+        grid-gap: 25px;
+        margin-bottom: 50px;
+        .w-photo{
+           
+    
+        }
+        .w-text{
+            padding-top: 25px;
+            h3{
+                font-size: 24px;
+                text-transform: uppercase;
+                font-family: 'DIN Pro Cond';
+                padding: 0px;
+                background: none;
+                margin-left: 0px;
+                display: inline;
+            }
+            div{
+                padding-top: 20px;
+            }
+            p{
+                margin-top: 35px;
+                font-size: 16px;
+            }
+            a{
+                font-family: 'DIN Pro Cond';
+                font-size: 23px;
+                color: #000;
+                text-decoration: none;
+                border:2px solid #feed00;
+                text-align: center;
+                padding: 4px 24px;
+                position: relative;
+                transition: 0.5s color;
+                float: right;
+                transition: 0.5s color;
+                &:hover{
+                    color:#feed00;
+                }
+                &:before{
+                    position: absolute;
+                    content: "";
+                    left: -2px;
+                    top:-14px;
+                    border: 7px solid transparent; 
+                    border-bottom: 7px solid #feed00; 
+                    border-left: 7px solid #feed00;
+                    
+                }
+                &:after{
+                    position: absolute;
+                    content: "";
+                    left: 0px;
+                    top:-8px;
+                    border: 6px solid transparent; 
+                    border-bottom: 6px solid #FFF; 
+                    border-left: 6px solid #FFF;
+                
+                    
+                }
+            }
+    
+        }
+    }
+
+
+}//
