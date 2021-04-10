@@ -1,0 +1,390 @@
+// main: style.less
+.project{
+    padding: 0 20px;
+    padding-top: 170px;
+    background: url(../img/fon1.png) 0 -300px repeat-x;
+    margin-bottom: 140px;
+    
+    .projectcontainer{
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 75px;
+        .projectleft{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 30px;
+            grid-row-gap: 80px;
+            
+            div{
+                position: relative;
+                height: auto;
+                
+                
+                &:nth-child(1) div{
+                    position: absolute;
+                    top: -25px;
+                    left: 0;  
+                    width: 100%;
+                }
+                &:nth-child(1) div{
+                    position: absolute;
+                    top: -25px;
+                    left: 0;
+                    width: 100%;
+                    
+                }
+                &:nth-child(2) div{
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    width: 100%;
+                }
+                &:nth-child(3) div{
+                    position: absolute;
+                    top: -25px;
+                    left: 0;
+                    width: 100%;
+                }
+                &:nth-child(4) div{
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    width: 100%;
+                }
+                div{
+                    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+                    transition: 0.5s background;
+                    object-fit: cover;
+                    img{
+                        width: 100%;
+                        transition: 0.5s opacity;
+                        height: 100%;
+                        
+                        
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom:0px;
+                        height: 8px;
+                        width: 100%;
+                        background: url(../img/Lines4.png);
+                    }
+                    &:hover{
+                        background: black;
+                        & img{
+                            opacity: 0.4;
+                        }
+                    }
+                }
+               
+                
+                
+
+
+            }
+            
+        }
+        .projectright{
+            padding-top: 50px;
+            .prh6{
+                font-size: 16px;
+                line-height: 19px;
+                color: #878787;
+                margin-bottom: 10px;
+
+            }
+            .prh3{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 44px;
+                line-height: 54px;
+                color: #000000;
+                background: url(../img/Group16.png) bottom left no-repeat;
+                padding-bottom: 50px;
+                margin-bottom: 20px;
+            }
+            .prdesk{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #2D2D2D;
+                margin-bottom: 80px;
+
+            }
+            ul{
+                li{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 37px;
+                    color: #2D2D2D;
+                    background: url(../img/Y.png) left center no-repeat;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:960px){
+
+    .project{
+        padding: 0 20px;
+        padding-top: 170px;
+        background: url(../img/fon1.png) 0 -300px repeat-x;
+        
+        .projectcontainer{
+            max-width: 1300px;
+            margin: 0 auto;
+            display: block;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 75px;
+            .projectleft{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+                grid-row-gap: 20px;
+                
+                div{
+                    position: relative;
+                    height: auto!important;
+                    background: black;
+                   
+                    &:nth-child(1) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                        
+                    }
+                    &:nth-child(2) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    &:nth-child(3) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    &:nth-child(4) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    div{
+                        transition: 0.5s background;
+                        img{
+                            width: 100%;
+                            transition: 0.5s opacity;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom:0px;
+                            height: 8px;
+                            width: 100%;
+                            background: url(../img/Lines4.png);
+                        }
+                        &:hover{
+                            background: black;
+                            & img{
+                                opacity: 0.4;
+                            }
+                        }
+                    }
+                   
+                    
+                    
+    
+    
+                }
+                
+            }
+            .projectright{
+                padding-top: 50px;
+                .prh6{
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #878787;
+                    margin-bottom: 10px;
+    
+                }
+                .prh3{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 44px;
+                    line-height: 54px;
+                    color: #000000;
+                    background: url(../img/Group16.png) bottom left no-repeat;
+                    padding-bottom: 50px;
+                    margin-bottom: 20px;
+                }
+                .prdesk{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #2D2D2D;
+                    margin-bottom: 80px;
+    
+                }
+                ul{
+                    li{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 37px;
+                        color: #2D2D2D;
+                        background: url(../img/Y.png) left center no-repeat;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:960px){
+
+    .project{
+        padding: 0 20px;
+        padding-top: 50px;
+        background: url(../img/fon1.png) 0 -300px repeat-x;
+        margin-bottom: 40px;
+        
+        .projectcontainer{
+            max-width: 1300px;
+            margin: 0 auto;
+            display: block;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 75px;
+            .projectleft{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 30px;
+                grid-row-gap: 20px;
+                
+                div{
+                    position: relative;
+                    height: auto!important;
+                    background: black;
+                   
+                    &:nth-child(1) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                        
+                    }
+                    &:nth-child(2) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    &:nth-child(3) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    &:nth-child(4) div{
+                        position: relative;
+                        top: 0px;
+                        left: 0;
+                        width: 100%;
+                    }
+                    div{
+                        transition: 0.5s background;
+                        img{
+                            width: 100%;
+                            transition: 0.5s opacity;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom:0px;
+                            height: 8px;
+                            width: 100%;
+                            background: url(../img/Lines4.png);
+                        }
+                        &:hover{
+                            background: black;
+                            & img{
+                                opacity: 0.4;
+                            }
+                        }
+                    }
+                   
+                    
+                    
+    
+    
+                }
+                
+            }
+            .projectright{
+                padding-top: 50px;
+                .prh6{
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #878787;
+                    margin-bottom: 10px;
+                    text-align: center;
+    
+                }
+                .prh3{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 30px;
+                    color: #000000;
+                    background: url(../img/Group16.png) bottom center no-repeat;
+                    padding-bottom: 50px;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                .prdesk{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #2D2D2D;
+                    margin-bottom: 20px;
+    
+                }
+                ul{
+                    li{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 37px;
+                        color: #2D2D2D;
+                        background: url(../img/Y.png) left center no-repeat;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}

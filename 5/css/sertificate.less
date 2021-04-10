@@ -1,0 +1,198 @@
+// main: style.less
+
+.sertificate{
+    background: #2C2431;
+    padding: 90px 20px;
+    .sertcontainer{
+        max-width: 1100px;
+        margin: 0 auto;
+        .sertslider{
+           
+            .sertitem2{
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+                grid-gap: 30px;
+                color: #FFF;
+                margin-bottom: 20px;
+
+            }
+            .slick-prev, .slick-next{
+                display: none!important;
+            }
+            .slick-dots{
+                bottom: -55px;
+                li{
+                    background: #C4C4C4;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 15px;
+                    border: 2px solid transparent;
+                }
+                .slick-active{
+                    background: #FF131F;
+                    border: 2px solid #FF131F;
+                }
+            }
+        }
+        .slh6{
+            font-size: 16px;
+            line-height: 19px;
+            color: #878787;
+            margin-bottom: 10px;
+            
+        }
+        .slh3{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 54px;
+            color: #FFF;
+            background: url(../img/Group16.png) bottom left no-repeat;
+            padding-bottom: 50px;
+            margin-bottom: 40px;
+         
+        }
+        .sertdesk{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #727272;
+            margin-bottom: 30px;
+        }
+        .serthumb{
+            text-align: center;
+            img{
+                display: inline-block;
+                margin: 0 10px;
+            }
+        }
+        .sertatr{
+            display: grid;
+            grid-template-columns: 0.7fr 1fr;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            ul{
+                li{
+                    margin: 15px 0;
+                }
+            }
+            
+            .sulright{
+                li{
+                    border-left: 1px solid #FFF;
+                    padding-left: 30px;
+                    color: #8A8A8A;
+                }
+            }
+            
+        }
+
+        
+    }
+}
+
+
+@media screen and (max-width:860px){
+
+    .sertificate{
+        background: #2C2431;
+        padding: 50px 20px 0px 20px;
+        .sertcontainer{
+            max-width: 1100px;
+            margin: 0 auto;
+            .sertslider{
+               
+                .sertitem2{
+                    display: block;
+                   
+                    color: #FFF;
+                    margin-bottom: 20px;
+    
+                }
+                .slick-prev, .slick-next{
+                    display: none!important;
+                }
+                .slick-dots{
+                    bottom: 50px;
+                    li{
+                        background: #C4C4C4;
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 15px;
+                        border: 2px solid transparent;
+                    }
+                    .slick-active{
+                        background: #FF131F;
+                        border: 2px solid #FF131F;
+                    }
+                }
+            }
+            .slh6{
+                font-size: 15px;
+                line-height: 19px;
+                color: #878787;
+                margin-bottom: 10px;
+                text-align: center;
+                
+            }
+            .slh3{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 40px;
+                color: #FFF;
+                background: url(../img/Group16.png) bottom center no-repeat;
+                padding-bottom: 50px;
+                margin-bottom: 40px;
+                text-align: center;
+             
+            }
+            .sertdesk{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #727272;
+                margin-bottom: 30px;
+            }
+            .serthumb{
+                text-align: center;
+                img{
+                    display: inline-block;
+                    margin: 10px;
+                }
+            }
+            .sertatr{
+                display: block;
+                grid-template-columns: 0.7fr 1fr;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                ul{
+                    li{
+                        margin: 15px 0;
+                    }
+                }
+                
+                .sulright{
+                    li{
+                        border-left: 0px solid #FFF;
+                        padding-left: 30px;
+                        color: #8A8A8A;
+                    }
+                }
+                
+            }
+    
+            
+        }
+    }
+
+
+}

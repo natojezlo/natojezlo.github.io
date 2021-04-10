@@ -1,0 +1,380 @@
+// main: style.less
+
+
+.slider{
+    background: url(../img/banner.png) top center no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 10px;
+    
+    .vnslider{
+        padding: 120px 20px;
+        img{
+            margin-bottom: 30px;
+        }
+        .h1{
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 70px;
+            position: relative;
+            padding-bottom: 40px;
+            margin-bottom: 65px;
+            &:before{
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                transform: translateX(-50%);
+                content: "";
+                width: 100%;
+                height: 19.8px;
+                background: url(../img/.h1back.png) bottom center no-repeat;
+            }
+        }
+        .h2{
+            font-size: 20px;
+            margin-bottom: 5px;
+            line-height: 25px;
+        }
+        .but-header{
+            button{
+                padding: 10px;
+                width: 365px;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                height: 53px;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: 0.5s color, 0.5s background;
+                position: relative;
+            }
+            .but-left{
+                background: #FFF;
+                border:1px solid #FF131F;
+                color: #FF131F;
+                &:hover{
+                    color:#FFF;
+                    background: #FF131F;
+                }
+                &:before{
+                    position: absolute;
+                    content:"";
+                    right:30px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+                    height: 10px;
+                    background: url(../img/Arrowred.png);
+                }
+            }
+            .but-right{
+                background: #FF131F;
+                border:1px solid #FF131F;
+                color: #FFF;
+                text-align: left;
+                padding-left: 35px;
+                &:hover{
+                    color: #FF131F;
+                    background: #FFF;
+                }
+                &:before{
+                    position: absolute;
+                    content:"";
+                    right:30px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+                    height: 10px;
+                    background: url(../img/Arrowwhite.png);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:1024px){
+    .slider{
+        background: url(../img/banner.png) top center no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFF;
+        
+        .vnslider{
+            padding: 120px 20px;
+            img{
+                margin-bottom: 30px;
+            }
+            .h1{
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 50px;
+                position: relative;
+                padding-bottom: 40px;
+                margin-bottom: 65px;
+                &:before{
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    transform: translateX(-50%);
+                    content: "";
+                    width: 100%;
+                    height: 19.8px;
+                    background: url(../img/.h1back.png) bottom center no-repeat;
+                }
+            }
+            .h2{
+                font-size: 18px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            .but-header{
+                button{
+                    padding: 10px;
+                    width: 300px;
+                    font-size: 17px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 53px;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                }
+                .but-left{
+                    background: #FFF;
+                    border:1px solid #FF131F;
+                    color: #FF131F;
+                    &:hover{
+                        color:#FFF;
+                        background: #FF131F;
+                    }
+                    &:before{
+                        position: absolute;
+                        content:"";
+                        right:10px;
+                        top:50%;
+                        transform: translateY(-50%);
+                        width: 24px;
+                        height: 10px;
+                        background: url(../img/Arrowred.png);
+                    }
+                }
+                .but-right{
+                    background: #FF131F;
+                    border:1px solid #FF131F;
+                    color: #FFF;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:hover{
+                        color: #FF131F;
+                        background: #FFF;
+                    }
+                    &:before{
+                        position: absolute;
+                        content:"";
+                        right:10px;
+                        top:50%;
+                        transform: translateY(-50%);
+                        width: 24px;
+                        height: 10px;
+                        background: url(../img/Arrowwhite.png);
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+    .slider{
+        background: url(../img/banner.png) top center no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFF;
+        
+        .vnslider{
+            padding: 100px 20px;
+            img{
+                margin-bottom: 20px;
+            }
+            .h1{
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 40px;
+                position: relative;
+                padding-bottom: 40px;
+                margin-bottom: 65px;
+                &:before{
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    transform: translateX(-50%);
+                    content: "";
+                    width: 100%;
+                    height: 19.8px;
+                    background: url(../img/.h1back.png) bottom center no-repeat;
+                }
+            }
+            .h2{
+                font-size: 16px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            .but-header{
+                button{
+                    padding: 5px 10px;
+                    width: 300px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 53px;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                    display: block;
+                    margin:10px auto;
+                }
+                .but-left{
+                    background: #FFF;
+                    border:1px solid #FF131F;
+                    color: #FF131F;
+                    text-align: center;
+                    &:hover{
+                        color:#FFF;
+                        background: #FF131F;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+                .but-right{
+                    background: #FF131F;
+                    border:1px solid #FF131F;
+                    color: #FFF;
+                    text-align: center;
+                    padding-left: 0px;
+                    &:hover{
+                        color: #FF131F;
+                        background: #FFF;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:520px){
+    .slider{
+        background: url(../img/banner.png) top center no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FFF;
+        
+        .vnslider{
+            padding: 40px 20px;
+            img{
+                margin-bottom: 20px;
+            }
+            .h1{
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 30px;
+                position: relative;
+                padding-bottom: 10px;
+                margin-bottom: 35px;
+                &:before{
+                    position: absolute;
+                    left: 50%;
+                    top: 100%;
+                    transform: translateX(-50%);
+                    content: "";
+                    width: 100%;
+                    height: 19.8px;
+                    background: url(../img/.h1back.png) bottom center no-repeat;
+                    background-size:70% auto;
+                }
+            }
+            .h2{
+                font-size: 14px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            .but-header{
+                button{
+                    padding: 3px 10px!important;
+                    width: 250px;
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 35px;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                    display: block;
+                    margin:10px auto;
+                }
+                .but-left{
+                    background: #FFF;
+                    border:1px solid #FF131F;
+                    color: #FF131F;
+                    text-align: center;
+                    &:hover{
+                        color:#FFF;
+                        background: #FF131F;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+                .but-right{
+                    background: #FF131F;
+                    border:1px solid #FF131F;
+                    color: #FFF;
+                    text-align: center;
+                    padding-left: 0px;
+                    &:hover{
+                        color: #FF131F;
+                        background: #FFF;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+

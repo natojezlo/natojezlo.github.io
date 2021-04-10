@@ -1,0 +1,620 @@
+// main: style.less
+
+.slickslider{
+    margin-bottom: 150px;
+    padding: 0 20px;
+    
+    .slickcontainer{
+        max-width: 1230px;
+        margin: 0 auto;
+        padding-top: 55px;
+       
+        .slh6{
+            font-size: 16px;
+            line-height: 19px;
+            color: #878787;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .slh3{
+            font-family: Montserrat;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 54px;
+            color: #000000;
+            background: url(../img/Group16.png) bottom center no-repeat;
+            padding-bottom: 50px;
+            margin-bottom: 120px;
+        }
+        .sl-block{
+             max-width: 920px;
+             margin: 0 auto;
+             margin-top: 60px;
+             position: relative;
+             padding-bottom: 22px;
+             background: url(../img/linegrey.png) left bottom repeat-x;
+             background-size: 100% auto;
+            
+            
+            .slickitem{
+                background: #F6F6F6;
+                padding: 15px;
+                display: grid;
+                grid-template-columns: 1fr 2fr 0.7fr;
+                grid-gap: 20px;
+                .sldesk{
+                    .h4{
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #000000;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #2D2D2D;
+                        margin-bottom: 30px;
+                    }
+                    .atribut{
+                        display: grid;
+                        grid-template-columns:1fr 1fr;
+                        grid-gap: 15px;
+                        font-family: Barlow;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        
+                        color: #000000;
+                        ul{
+                            li{
+                                background: url(../img/Ellipse31.png) left center no-repeat;
+                                padding-left: 10px;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+                .slprice{
+                    background: #FFF;
+                    padding: 35px 0px 0 0px;
+                    position: relative;
+                    .h2{
+                        
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        text-align: center;
+                        color: #000000;
+                        margin-bottom: 20px;
+                    }
+                    .h3{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 28px;
+                        text-align: center;
+                        color: #FF131F;
+                        margin-bottom: 20px;
+                    }
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        color: #000000;
+                        text-align: center;
+                    }
+                    .read{
+                        background: #393939;
+                        display: block;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: rgba(255, 255, 255,1);
+                        padding: 15px 5px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+
+            .slick-prev{
+                width: 46px;
+                height: 46px;
+                background: url(../img/slprev.png);
+                position: absolute;
+                left: -170px;
+                top:-40px;
+                &:before{
+                    display: none;
+                }
+            }
+            .slick-next{
+                width: 46px;
+                height: 46px;
+                background: url(../img/sknext.png);
+                position: absolute;
+                right: -170px;
+                top:-40px;
+                &:before{
+                    display: none;
+                }
+            }
+            .slick-dots{
+                position: absolute;
+                left: 0;
+                top:-60px;
+                text-align: center;
+                width: 100%;
+                height: 40px;
+                li{
+                    display:inline-block;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    width:auto!important;
+                    margin:0 10px;
+                    &.slick-active{color: #FF131F;}
+
+                    &:nth-child(1):before{
+                        content: "Коридор";
+                    }
+                    &:nth-child(2):before{
+                        content: "Санузел";
+                    }
+                    &:nth-child(3):before{
+                        content: "Гостинная";
+                    }
+                    &:nth-child(4):before{
+                        content: "Кухня";
+                    }
+                    &:nth-child(5):before{
+                        content: "Ванная";
+                    }
+                    &:nth-child(6):before{
+                        content: "Спальня";
+                    }
+                    &:nth-child(7):before{
+                        content: "Коттедж";
+                    }
+                    button{
+                        
+                        display: block;
+                        &:before{display:none;}
+
+                        
+                    }
+                    
+                }
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1280px){
+
+    .slickslider{
+        margin-bottom: 50px;
+        
+        .slickcontainer{
+            max-width: 1230px;
+            margin: 0 auto;
+            padding-top: 55px;
+           
+            .slh6{
+                font-size: 16px;
+                line-height: 19px;
+                color: #878787;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            .sl.h3{
+                font-family: Montserrat;
+                text-align: center;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 44px;
+                line-height: 54px;
+                color: #000000;
+                background: url(../img/Group16.png) bottom center no-repeat;
+                padding-bottom: 50px;
+                margin-bottom: 120px;
+            }
+            .sl-block{
+                 max-width: 920px;
+                 margin: 0 auto;
+                 margin-top: 60px;
+                 position: relative;
+                 padding-bottom: 22px;
+                 background: url(../img/linegrey.png) left bottom repeat-x;
+                 background-size: 100% auto;
+                
+                
+                .slickitem{
+                    background: #F6F6F6;
+                    padding: 15px;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 0.7fr;
+                    grid-gap: 20px;
+                    .sldesk{
+                        .h4{
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #000000;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #2D2D2D;
+                            margin-bottom: 30px;
+                        }
+                        .atribut{
+                            display: grid;
+                            grid-template-columns:1fr 1fr;
+                            grid-gap: 15px;
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            
+                            color: #000000;
+                            ul{
+                                li{
+                                    background: url(../img/Ellipse31.png) left center no-repeat;
+                                    padding-left: 10px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                    .slprice{
+                        background: #FFF;
+                        padding: 35px 0px 0 0px;
+                        position: relative;
+                        .h2{
+                            
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000000;
+                            margin-bottom: 20px;
+                        }
+                        .h3{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 28px;
+                            text-align: center;
+                            color: #FF131F;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            color: #000000;
+                            text-align: center;
+                        }
+                        .read{
+                            background: #393939;
+                            display: block;
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: rgba(255, 255, 255,1);
+                            padding: 15px 5px;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+    
+    
+                .slick-prev{
+                    display: none!important;
+                    &:before{
+                        display: none;
+                    }
+                }
+                .slick-next{
+                    display: none!important;
+                    &:before{
+                        display: none;
+                    }
+                }
+                .slick-dots{
+                    position: absolute;
+                    left: 0;
+                    top:-60px;
+                    text-align: center;
+                    width: 100%;
+                    li{
+                        display:inline-block;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        width:auto!important;
+                        margin:0 10px;
+                        &.slick-active{color: #FF131F;}
+    
+                        &:nth-child(1):before{
+                            content: "Коридор";
+                        }
+                        &:nth-child(2):before{
+                            content: "Санузел";
+                        }
+                        &:nth-child(3):before{
+                            content: "Гостинная";
+                        }
+                        &:nth-child(4):before{
+                            content: "Кухня";
+                        }
+                        &:nth-child(5):before{
+                            content: "Ванная";
+                        }
+                        &:nth-child(6):before{
+                            content: "Спальня";
+                        }
+                        &:nth-child(7):before{
+                            content: "Коттедж";
+                        }
+                        button{
+                            
+                            display: block;
+                            &:before{display:none;}
+    
+                            
+                        }
+                        
+                    }
+                }
+    
+            }
+        }
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .slickslider{
+        margin-bottom: 30px;
+        
+        .slickcontainer{
+            max-width: 1230px;
+            margin: 0 auto;
+            padding-top: 55px;
+           
+            .slh6{
+                font-size: 12px;
+                line-height: 19px;
+                color: #878787;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .slh3{
+                font-family: Montserrat;
+                text-align: center;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 54px;
+                color: #000000;
+                background: url(../img/Group16.png) bottom center no-repeat;
+                padding-bottom: 20px;
+                margin-bottom: 80px;
+            }
+            .sl-block{
+                 width: 100%;
+                 margin: 0 auto;
+                 margin-top: 60px;
+                 position: relative;
+                 padding-bottom: 22px;
+                 background: url(../img/linegrey.png) left bottom repeat-x;
+                 background-size: 100% auto;
+                 padding-top: 40px;
+                
+                
+                .slickitem{
+                    background: #F6F6F6;
+                    padding: 15px;
+                    display: block;
+                    grid-template-columns: 1fr 2fr 0.7fr;
+                    grid-gap: 20px;
+                    .slimg{
+                        margin-bottom: 15px;
+                    }
+                    .sldesk{
+                        .h4{
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #000000;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #2D2D2D;
+                            margin-bottom: 30px;
+                        }
+                        .atribut{
+                            display: grid;
+                            grid-template-columns:1fr 1fr;
+                            grid-gap: 15px;
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            
+                            color: #000000;
+                            ul{
+                                li{
+                                    background: url(../img/Ellipse31.png) left center no-repeat;
+                                    padding-left: 10px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+                    .slprice{
+                        background: #FFF;
+                        padding: 35px 0px 0 0px;
+                        position: relative;
+                        .h2{
+                            
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            text-align: center;
+                            color: #000000;
+                            margin-bottom: 20px;
+                        }
+                        .h3{
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 28px;
+                            text-align: center;
+                            color: #FF131F;
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            color: #000000;
+                            text-align: center;
+                        }
+                        .read{
+                            background: #393939;
+                            display: block;
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: rgba(255, 255, 255,1);
+                            padding: 15px 5px;
+                            position: relative;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+    
+    
+                .slick-prev{
+                    display: none!important;
+                    &:before{
+                        display: none;
+                    }
+                }
+                .slick-next{
+                    display: none!important;
+                    &:before{
+                        display: none;
+                    }
+                }
+                
+                
+                .slick-dots{
+                    position: absolute;
+                    left: 0;
+                    top:-60px;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 40px;
+                    li{
+                        display:inline-block;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        width:auto!important;
+                        margin:0 10px;
+                        &.slick-active{color: #FF131F;}
+    
+                        &:nth-child(1):before{
+                            content: "Коридор";
+                        }
+                        &:nth-child(2):before{
+                            content: "Санузел";
+                        }
+                        &:nth-child(3):before{
+                            content: "Гостинная";
+                        }
+                        &:nth-child(4):before{
+                            content: "Кухня";
+                        }
+                        &:nth-child(5):before{
+                            content: "Ванная";
+                        }
+                        &:nth-child(6):before{
+                            content: "Спальня";
+                        }
+                        &:nth-child(7):before{
+                            content: "Коттедж";
+                        }
+                        button{
+                            
+                            display: block;
+                            &:before{display:none;}
+    
+                            
+                        }
+                        
+                    }
+                }
+    
+            }
+        }
+    }
+    
+
+}

@@ -1,0 +1,360 @@
+// main: style.less
+
+.whoo{
+    padding: 0 20px;
+    margin-bottom: 135px;
+    .slh6{
+        font-size: 16px;
+        line-height: 19px;
+        color: #878787;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .slh3{
+        font-family: Montserrat;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 54px;
+        color: #000000;
+        background: url(../img/Group16.png) bottom center no-repeat;
+        padding-bottom: 50px;
+        margin-bottom: 40px;
+    }
+    .whoocontainer{
+        display: grid;
+        grid-template-columns:  1fr 1.5fr;
+        grid-gap: 35px;
+        max-width: 1260px;
+        margin: 0 auto;
+        .video{
+            position: relative;
+            img{width:100%;}
+            .titlevideo{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 120px;
+                line-height: 120px;
+                width: 100%;
+                background: rgba(255, 19, 31, 0.9);
+                text-align: center;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                color: #000000;
+                box-shadow: 0 0 25px rgba(0,0,0,0.2);
+                &:before{
+                    border: 45px solid transparent; 
+                    border-bottom: 45px solid rgba(255, 19, 31, 0.9);
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top:-90px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .photo{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 35px;
+            
+            .itemphoto{
+                position: relative;
+                box-shadow: 0 0 25px rgba(0,0,0,0.2);
+                .titlephoto{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    padding: 15px;
+                    width: 100%;
+                    background: rgba(255,255,255,0.8);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000000;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+
+    }
+}
+
+@media screen and (max-width:960px){
+
+    .whoo{
+        padding: 0 20px;
+        .slh6{
+            font-size: 15px;
+            line-height: 19px;
+            color: #878787;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .slh3{
+            font-family: Montserrat;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 54px;
+            color: #000000;
+            background: url(../img/Group16.png) bottom center no-repeat;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        .whoocontainer{
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+            grid-gap: 35px;
+            max-width: 1260px;
+            margin: 0 auto;
+            .video{
+                position: relative;
+                .titlevideo{
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 120px;
+                    line-height: 120px;
+                    width: 100%;
+                    background: rgba(255, 19, 31, 0.9);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000000;
+                    &:before{
+                        border: 45px solid transparent; 
+                        border-bottom: 45px solid rgba(255, 19, 31, 0.9);
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top:-90px;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+            .photo{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 35px;
+                
+                .itemphoto{
+                    position: relative;
+                    .titlephoto{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        padding: 15px;
+                        width: 100%;
+                        background: rgba(255,255,255,0.8);
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #000000;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+            }
+    
+        }
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:768px){
+
+    .whoo{
+        padding: 0 20px;
+        margin-bottom: 20px;
+        .slh6{
+            font-size: 15px;
+            line-height: 19px;
+            color: #878787;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .slh3{
+            font-family: Montserrat;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 54px;
+            color: #000000;
+            background: url(../img/Group16.png) bottom center no-repeat;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        .whoocontainer{
+            display: block;
+            grid-template-columns:  1fr 1fr;
+            grid-gap: 35px;
+            max-width: 1260px;
+            margin: 0 auto;
+            
+            .video{
+                position: relative;
+                margin-bottom: 35px;
+                .titlevideo{
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 100%;
+                    background: rgba(255, 19, 31, 0.9);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000000;
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+            .photo{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 35px;
+                
+                .itemphoto{
+                    position: relative;
+                    .titlephoto{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        padding: 15px;
+                        width: 100%;
+                        background: rgba(255,255,255,0.8);
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #000000;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+            }
+    
+        }
+    }
+
+}
+
+
+@media screen and (max-width:520px){
+
+    .whoo{
+        padding: 0 20px;
+        margin-bottom: 20px;
+        .slh6{
+            font-size: 15px;
+            line-height: 19px;
+            color: #878787;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .slh3{
+            font-family: Montserrat;
+            text-align: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 54px;
+            color: #000000;
+            background: url(../img/Group16.png) bottom center no-repeat;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+        .whoocontainer{
+            display: block;
+            grid-template-columns:  1fr 1fr;
+            grid-gap: 35px;
+            max-width: 1260px;
+            margin: 0 auto;
+            
+            .video{
+                position: relative;
+                margin-bottom: 35px;
+                .titlevideo{
+                    position: relative;
+                    left: 0;
+                    bottom: 0;
+                    height: 40px;
+                    line-height: 40px;
+                    width: 100%;
+                    background: rgba(255, 19, 31, 0.9);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000000;
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+            .photo{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 35px;
+                overflow-x: scroll;
+                
+                
+                .itemphoto{
+                    position: relative;
+                    margin-bottom: 35px;
+                    .titlephoto{
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        padding: 15px;
+                        width: 100%;
+                        background: rgba(255,255,255,0.8);
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: #000000;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+                
+            }
+    
+        }
+    }
+
+}

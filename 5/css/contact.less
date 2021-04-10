@@ -1,0 +1,86 @@
+// main: style.less
+
+
+.contact{
+    padding: 135px 20px 40px 20px;
+    background: url(../img/fon2.png) 50px 0;
+    .contactcontainer{
+        display: grid;
+        grid-template-columns: 1.5fr 3fr;
+        max-width: 1275px;
+        margin: 0 auto;
+        .contactblock{
+            background: #FF131F;
+            padding: 30px 40px;
+            color: #FFF;
+            display: grid;
+            grid-template-columns: 50px 1fr;
+          
+            .citemtitle{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 28px;
+                padding-bottom: 30px;
+                margin-bottom: 30px;
+            }
+            .citem{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #EFEFEF;
+                margin-bottom: 30px;
+                align-items: center;
+            }
+        }
+        .map{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:860px){
+    .contact{
+        padding:  40px 20px 40px 20px;
+        background: url(../img/fon2.png) 50px 0;
+        .contactcontainer{
+            display: block;
+            grid-template-columns: 1.5fr 3fr;
+            max-width: 1275px;
+            margin: 0 auto;
+            .contactblock{
+                background: #FF131F;
+                padding: 30px 40px;
+                color: #FFF;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+              
+                .citemtitle{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 28px;
+                    padding-bottom: 30px;
+                    margin-bottom: 30px;
+                }
+                .citem{
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    padding-bottom: 30px;
+                    border-bottom: 1px solid #EFEFEF;
+                    margin-bottom: 30px;
+                    align-items: center;
+                }
+            }
+            .map{}
+        }
+    }
+
+}

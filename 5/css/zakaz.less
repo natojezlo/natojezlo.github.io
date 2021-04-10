@@ -1,0 +1,394 @@
+// main: style.less
+
+.zakaz{
+    background: #FF131F url(../img/redblock.png) top center no-repeat;
+    background-size: cover;
+    padding: 0 20px;
+    .zakazcontainer{
+        padding: 65px 0;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns:100px 1.5fr 1fr 1fr;
+        align-items: center;
+        .zblock1{
+            text-align: center;
+            font-size: 28px;
+            font-weight: 600;
+            border-right: 2px solid #000;
+            padding-right: 65px;
+        }
+        .zblock2{
+            font-size: 18px;
+            div{
+                padding: 8px 0 8px 0;
+                margin-left: 65px;
+                padding-left: 60px;
+                text-transform: uppercase;
+                background: url(../img/Callus.png) left center no-repeat;
+                line-height: 30px;
+            }
+            a{
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+                text-decoration: none;
+                padding-top: 5px;
+            }
+        }
+        .zblock3{
+            padding-left: 30px;
+            button{
+                padding: 10px;
+                width: 100%;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                height: 53px;
+                margin: 0 10px;
+                cursor: pointer;
+                transition: 0.5s color, 0.5s background;
+                position: relative;
+                background: #2C2431;
+                border:1px solid #2C2431;
+                color: #FFF;
+                text-align: left;
+                padding-left: 35px;
+                &:hover{
+                    color: #2C2431;
+                    background: #FFF;
+                }
+                &:before{
+                    position: absolute;
+                    content:"";
+                    right:30px;
+                    top:50%;
+                    transform: translateY(-50%);
+                    width: 24px;
+                    height: 10px;
+                    background: url(../img/Arrowwhite.png);
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:1320px){
+
+    .zakaz{
+        background: #FF131F url(../img/redblock.png) top center no-repeat;
+        background-size: cover;
+        .zakazcontainer{
+            padding: 65px 0;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns:100px 1.5fr 1fr 1fr;
+            align-items: center;
+            .zblock1{
+                text-align: center;
+                font-size: 28px;
+                font-weight: 600;
+                border-right: 2px solid #000;
+                padding-right: 20px;
+            }
+            .zblock2{
+                font-size: 18px;
+                div{
+                    padding: 8px 0 8px 0;
+                    margin-left: 20px;
+                    padding-left: 60px;
+                    text-transform: uppercase;
+                    background: url(../img/Callus.png) left center no-repeat;
+                    line-height: 30px;
+                }
+                a{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                    text-decoration: none;
+                    padding-top: 5px;
+                }
+            }
+            .zblock3{
+                padding-left: 20px;
+                padding-right: 20px;
+                button{
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 53px;
+                    
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                    background: #2C2431;
+                    border:1px solid #2C2431;
+                    color: #FFF;
+                    text-align: left;
+                    padding-left: 35px;
+                    &:hover{
+                        color: #2C2431;
+                        background: #FFF;
+                    }
+                    &:before{
+                        position: absolute;
+                        content:"";
+                        right:30px;
+                        top:50%;
+                        transform: translateY(-50%);
+                        width: 24px;
+                        height: 10px;
+                        background: url(../img/Arrowwhite.png);
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+
+    .zakaz{
+        background: #FF131F url(../img/redblock.png) top center no-repeat;
+        background-size: cover;
+        .zakazcontainer{
+            padding: 20px 0;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            align-items: center;
+            .zblock1{
+                text-align: center;
+                font-size: 22px;
+                font-weight: 600;
+                border-right: 2px solid #000;
+                padding-right: 40px;
+            }
+            .zblock2{
+                font-size: 16px;
+                div{
+                    padding: 8px 0 8px 0;
+                    margin-left: 40px;
+                    padding-left: 60px;
+                    text-transform: uppercase;
+                    background: url(../img/Callus.png) left center no-repeat;
+                    line-height: 30px;
+                }
+                a{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                    text-decoration: none;
+                    padding-top: 5px;
+                }
+            }
+            .zblock3{
+                padding-left: 20px;
+                padding-right: 20px;
+                button{
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 53px;
+                    
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                    background: #2C2431;
+                    border:1px solid #2C2431;
+                    color: #FFF;
+                    text-align: left;
+                    padding-left: 35px;
+                    &:hover{
+                        color: #2C2431;
+                        background: #FFF;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:1024px){
+
+    .zakaz{
+
+        background: #FF131F url(../img/redblock.png) top center no-repeat;
+        background-size: cover;
+        .zakazcontainer{
+            padding: 20px 0;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            grid-template-columns: 90px 1.5fr 1fr 1fr;
+            align-items: center;
+            .zblock1{
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                border-right: 0px solid #000;
+                padding-right: 40px;
+                margin-bottom: 20px;
+            }
+            .zblock2{
+                font-size: 16px;
+                margin-bottom: 20px;
+                div{
+                    padding: 8px 0 8px 0;
+                    margin-left: 40px;
+                    padding-left: 0px;
+                    text-transform: uppercase;
+                    background:none;
+                    line-height: 30px;
+                    text-align: center;
+                }
+                a{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                    text-decoration: none;
+                    padding-top: 5px;
+                }
+            }
+            .zblock3{
+                padding-left: 20px;
+                padding-right: 20px;
+                button{
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 53px;
+                    text-align: center;
+                    
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                    background: #2C2431;
+                    border:1px solid #2C2431;
+                    color: #FFF;
+                    
+                    padding-left: 35px;
+                    &:hover{
+                        color: #2C2431;
+                        background: #FFF;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+    .zakaz{
+
+        background: #FF131F url(../img/redblock.png) top center no-repeat;
+        background-size: cover;
+        .zakazcontainer{
+            padding: 20px 0;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            grid-template-columns: 90px 1.5fr 1fr 1fr;
+            align-items: center;
+            .zblock0{
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            .zblock1{
+                text-align: center;
+                font-size: 18px;
+                font-weight: 600;
+                border-right: 0px solid #000;
+                padding-right: 0px;
+                margin-bottom: 20px;
+            }
+            .zblock2{
+                font-size: 16px;
+                margin-bottom: 20px;
+                div{
+                    padding: 8px 0 8px 0;
+                    margin-left: 0px!important;
+                    padding-left: 0px!important;
+                    text-transform: uppercase;
+                    background:none;
+                    line-height: 30px;
+                    text-align: center;
+                }
+                a{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                    text-decoration: none;
+                    padding-top: 5px;
+                }
+            }
+            .zblock3{
+                padding-left: 20px;
+                padding-right: 20px;
+                button{
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    height: 53px;
+                    text-align: center;
+                    
+                    cursor: pointer;
+                    transition: 0.5s color, 0.5s background;
+                    position: relative;
+                    background: #2C2431;
+                    border:1px solid #2C2431;
+                    color: #FFF;
+                    
+                    padding-left: 35px;
+                    &:hover{
+                        color: #2C2431;
+                        background: #FFF;
+                    }
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}

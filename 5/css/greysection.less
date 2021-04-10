@@ -1,0 +1,147 @@
+// main: style.less
+
+.greysection{
+    background: #C4C4C4;
+    padding: 0 20px;
+    .greycontainer{
+        padding: 30px 0;
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
+        .grblock{
+            .greytitle{
+                font-size: 48px;
+                font-weight: 800;
+                color: #FF131F;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-bottom: 15px;
+            }
+            .greysubtitle{
+                font-size: 20px;
+                color: #2C2431;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .greydesk{
+                font-size: 16px;
+                color: #878787;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:960px){
+    .greysection{
+        background: #C4C4C4;
+        padding: 0 20px;
+        .greycontainer{
+            padding: 30px 0;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            .grblock{
+                .greytitle{
+                    font-size: 48px;
+                    font-weight: 800;
+                    color: #FF131F;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-bottom: 15px;
+                }
+                .greysubtitle{
+                    font-size: 20px;
+                    color: #2C2431;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .greydesk{
+                    font-size: 16px;
+                    color: #878787;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width:768px){
+    .greysection{
+        background: #C4C4C4;
+        padding: 0 20px;
+        .greycontainer{
+            padding: 30px 0;
+            width: 100%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            .grblock{
+                .greytitle{
+                    font-size: 35px;
+                    font-weight: 800;
+                    color: #FF131F;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-bottom: 15px;
+                }
+                .greysubtitle{
+                    font-size: 16px;
+                    color: #2C2431;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .greydesk{
+                    font-size: 13px;
+                    color: #878787;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+@media screen and (max-width:460px){
+    .greysection{
+        background: #C4C4C4;
+        padding: 0 20px;
+        .greycontainer{
+            padding: 30px 0;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            .grblock{
+                .greytitle{
+                    font-size: 28px;
+                    font-weight: 800;
+                    color: #FF131F;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-bottom: 15px;
+                }
+                .greysubtitle{
+                    font-size: 14px;
+                    color: #2C2431;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                .greydesk{
+                    font-size: 12px;
+                    color: #878787;
+                }
+            }
+        }
+    }
+
+}
