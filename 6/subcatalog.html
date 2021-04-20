@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>SubCatalog</title>
+    <link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body>
+    <!--TOP-->
+    <div id="top-panel">
+        <div class="top-panel container">
+            <div class="logo">
+                <a href="/"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Ножі DICK">
+                    <button></button>
+                </form>
+            </div>
+            <div class="lang">
+                <a href="#" class="active">UA</a>
+                <a href="#">RU</a>
+            </div>
+            <div class="top-right-block">
+                <ul>
+                    <li class="phone"><a href="#" data-hystmodal="#myModal11"></a></li>
+                    <li class="account"><a href="#" data-hystmodal="#myModal4"></a></li>
+                    <li class="cart"><a href="#" data-hystmodal="#myModal3"></a></li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!--./TOP-->
+    <!--MobileSearch-->
+    <div class="mobilesearch container">
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Ножі DICK">
+                <button></button>
+            </form>
+        </div>
+    </div>
+    <!--./MobileSearch-->
+
+    <!--TopMenu-->
+    <div class="overlay"></div>
+    <div id="topmenu" class="topmenu">
+        <div class="menu container">
+            <ul>
+                <li><a class="catalog" href="./catalog.html">Каталог</a></li>
+                <li><a class="price" href="#">Ціна</a></li>
+                <li><a href="./blog.html">Блог</a></li>
+                <li><a href="./about.html">Чому ми</a></li>
+                <li><a href="./partner.html">Партнерам</a></li>
+                <li><a class="who" href="#">Як придбати?</a></li>
+            </ul>
+        </div>
+        <div class="close">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!--./TopMenu-->
+
+    <!--Nav-->
+    <div class="tnav">
+        <a href="#">Головна</a>
+        <a href="#">Каталог</a>
+        <span>Ножі</span>
+    </div>
+    <!--Nav-->
+    <!--CategoryWall-->
+    <div class="categorywall2">
+        <div><img src="./img/subcat.png" alt="cw"><a href="#"><span>Hoжі</span></a></div>
+    </div>
+    <!--./CategoryWall-->
+
+    <!--Sort-->
+    <div id="sort">
+        <div class="sort container">
+            <div class="sortleft">
+                Фільтрувати:
+                
+            </div>
+            <div class="sortright">
+                <div class="sort1">Сортувати:</div>
+                <div class="sort2">
+                    <select name="" id="">
+                        <option value=""></option>
+                        <option value="">Ціна ↑</option>
+                        <option value="">Ціна ↓</option>
+                        <option value="">Рейтинг ↑</option>
+                        <option value="">Рейтинг ↓</option>
+                        <option value="">Дата ↑</option>
+                        <option value="">Дата ↓</option>
+                    </select>
+                </div>
+                <div class="sort3"><a href="#">Скинути всі фільтри</a></div>
+            </div>
+        </div>
+    </div>
+    <!--./Sort-->
+
+    <!--Catalog-->
+    <div id="catalog">
+        <div class="catalog container">
+            <div class="filter">
+                <div class="filter-title">Категорії</div>
+                <div class="box-filter">
+                    <div>
+                        <input id="radio-1" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-1" class="radio-custom-label">Ножі</label>
+                    </div>
+                    <div>
+                        <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-2" class="radio-custom-label">Заточні пристрої</label>
+                    </div>
+                    <div>
+                        <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-3" class="radio-custom-label">Спецодяг</label>
+                    </div>
+                    <div>
+                        <input id="radio-4" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-4" class="radio-custom-label">Промисловий інвентар</label>
+                    </div>
+                    <div>
+                        <input id="radio-5" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-5" class="radio-custom-label">Обладнання</label>
+                    </div>
+                    <div>
+                        <input id="radio-6" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-6" class="radio-custom-label">Допоміжні товари</label>
+                    </div>
+                    <div>
+                        <input id="radio-7" class="radio-custom" name="radio-group" type="radio">
+                        <label for="radio-7" class="radio-custom-label">Інвентар для кейтерінга</label>
+                    </div> 
+                </div>
+
+                <div class="filter-title">Підкатегорії</div>
+                <div class="box-filter">
+                    <div>
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                        <label for="checkbox-1" class="checkbox-custom-label">Ножі</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+                        <label for="checkbox-2" class="checkbox-custom-label">Топори, тесаки</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" >
+                        <label for="checkbox-3" class="checkbox-custom-label">Веделки</label>
+                    </div>
+                   
+                </div>
+
+
+                <div class="filter-title">Бренди</div>
+                <div class="box-filter box-filter-fixed">
+                    <div>
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                        <label for="checkbox-1" class="checkbox-custom-label">DICK</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" >
+                        <label for="checkbox-2" class="checkbox-custom-label">ICEL</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" >
+                        <label for="checkbox-3" class="checkbox-custom-label">TRAMONTINA</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox" >
+                        <label for="checkbox-4" class="checkbox-custom-label">MARTOR</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox" >
+                        <label for="checkbox-5" class="checkbox-custom-label">OSKARD</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox" >
+                        <label for="checkbox-6" class="checkbox-custom-label">DUNLOP</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox" >
+                        <label for="checkbox-7" class="checkbox-custom-label">SIKA</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-8" class="checkbox-custom" name="checkbox-8" type="checkbox" >
+                        <label for="checkbox-8" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-9" class="checkbox-custom" name="checkbox-9" type="checkbox" >
+                        <label for="checkbox-9" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-10" class="checkbox-custom" name="checkbox-10" type="checkbox" >
+                        <label for="checkbox-10" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-11" class="checkbox-custom" name="checkbox-11" type="checkbox" >
+                        <label for="checkbox-11" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-12" class="checkbox-custom" name="checkbox-12" type="checkbox" >
+                        <label for="checkbox-12" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-13" class="checkbox-custom" name="checkbox-13" type="checkbox" >
+                        <label for="checkbox-13" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-14" class="checkbox-custom" name="checkbox-14" type="checkbox" >
+                        <label for="checkbox-14" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                </div>
+
+                <div class="filter-title">Тип інструмента</div>
+                <div class="box-filter box-filter-fixed">
+                    <div>
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                        <label for="checkbox-1" class="checkbox-custom-label">Набір ножів</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" >
+                        <label for="checkbox-2" class="checkbox-custom-label">Обробний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" >
+                        <label for="checkbox-3" class="checkbox-custom-label">Обвалювальний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox" >
+                        <label for="checkbox-4" class="checkbox-custom-label">Жилувальний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox" >
+                        <label for="checkbox-5" class="checkbox-custom-label">Нарізний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox" >
+                        <label for="checkbox-6" class="checkbox-custom-label">Шкіркоз’ємний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox" >
+                        <label for="checkbox-7" class="checkbox-custom-label">Кухонний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-8" class="checkbox-custom" name="checkbox-8" type="checkbox" >
+                        <label for="checkbox-8" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-9" class="checkbox-custom" name="checkbox-9" type="checkbox" >
+                        <label for="checkbox-9" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-10" class="checkbox-custom" name="checkbox-10" type="checkbox" >
+                        <label for="checkbox-10" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-11" class="checkbox-custom" name="checkbox-11" type="checkbox" >
+                        <label for="checkbox-11" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-12" class="checkbox-custom" name="checkbox-12" type="checkbox" >
+                        <label for="checkbox-12" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-13" class="checkbox-custom" name="checkbox-13" type="checkbox" >
+                        <label for="checkbox-13" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-14" class="checkbox-custom" name="checkbox-14" type="checkbox" >
+                        <label for="checkbox-14" class="checkbox-custom-label">First Choice</label>
+                    </div>
+                </div>
+
+                <div class="filter-title">Гнучкість ножа</div>
+                <div class="box-filter">
+                    <div>
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                        <label for="checkbox-1" class="checkbox-custom-label">Жорсткий</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+                        <label for="checkbox-2" class="checkbox-custom-label">Напівгнучкий</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" >
+                        <label for="checkbox-3" class="checkbox-custom-label">Гручкий</label>
+                    </div>
+                   
+                </div>
+
+
+                <div class="filter-title">Колір ручки</div>
+                <div class="box-filter">
+                    <div>
+                        <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox" checked>
+                        <label for="checkbox-1" class="checkbox-custom-label">Синій</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox" checked>
+                        <label for="checkbox-2" class="checkbox-custom-label">Жовтий</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox" >
+                        <label for="checkbox-3" class="checkbox-custom-label">Черноний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox" >
+                        <label for="checkbox-4" class="checkbox-custom-label">Чорний</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-5" class="checkbox-custom" name="checkbox-5" type="checkbox" >
+                        <label for="checkbox-5" class="checkbox-custom-label">Зелений</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox" >
+                        <label for="checkbox-6" class="checkbox-custom-label">Білий</label>
+                    </div>
+                    <div>
+                        <input id="checkbox-7" class="checkbox-custom" name="checkbox-7" type="checkbox" >
+                        <label for="checkbox-7" class="checkbox-custom-label">Помаранчевий</label>
+                    </div>
+                   
+                </div>
+
+
+                <div class="filter-title">Довжина леза</div>
+                <div class="box-filter pricebox">
+                    <input type="text" placeholder="0 см"> - <input type="text" placeholder="20 см"> <button>Так</button>
+                </div>
+
+
+                <div class="filter-title">Ціна</div>
+                <div class="box-filter pricebox">
+                    <input type="text" placeholder="0 грн"> - <input type="text" placeholder="500 грн"> <button>Так</button>
+                </div>
+
+                <div class="filter-title">Підписатися на розсилку</div>
+                <div class="box-filter">
+                    <form action="#">
+                        <input class="finp1" type="text" placeholder="Ім’я"><br/>
+                        <input class="finp2" type="text" placeholder="E-mail">
+                        <button></button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="catalog-list">
+                <div class="active_filter">
+                    <div>
+                        <a href="#">DICK</a>
+                        <a href="#">ICEL</a>
+                        <a href="#">до 500грн</a>
+                    </div>
+                    <div class="show">Показано 2000 товарів</div>
+                </div>
+                 
+                <div class="listproduct">
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no1.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no2.png" alt="hot"></a></div>
+                        <div class="hot-title"><a h ref="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="new"></span>
+                        
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no3.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                       
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no4.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no5.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no6.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no7.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no8.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no9.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no10.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no11.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                    <div class="hot_item">
+                        <div class="hot-img"><a href="#"></a><img src="./img/no12.png" alt="hot"></a></div>
+                        <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                        <div class="hot-article">Артикул: 000</div>
+                        <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                        <div class="hot-button"><button>Купити</button></div>
+                        <span class="top"></span>
+                    </div>
+                </div>
+
+
+
+            </div>
+            
+        </div>
+    </div>
+    <!--Catalog-->
+
+    <!--Hot-->
+    <div id="hot" class="container">
+        <div class="title">Вас зацікавило</div>
+        <div class="hot">
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod1.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Обвалювальний ніж 15 см. ICEL (Portugal)</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>250 грн</span> 225 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"></a><img src="./img/hot-prod2.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod3.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Щітка - утюжок зелена FALCON BRUSH</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>120 грн</span> 93 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod4.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Ніж філетувальний для риби 21 см. Practica ICEL</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>350 грн</span> 320 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod1.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Обвалювальний ніж 15 см. ICEL (Portugal)</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>250 грн</span> 225 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+            </div>
+        </div>
+    </div>
+    <!--./Hot-->
+
+
+
+
+    <!--Hot-->
+    <div id="hot" class="container">
+        <div class="title">Гарячі пропозиції</div>
+        <div class="hot">
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod1.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Обвалювальний ніж 15 см. ICEL (Portugal)</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>250 грн</span> 225 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+                <span class="sale"></span>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"></a><img src="./img/hot-prod2.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Чоботи 34-49 Dunlop</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>1150 грн</span> 1080 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod3.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Щітка - утюжок зелена FALCON BRUSH</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>120 грн</span> 93 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+                <span class="sale"></span>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod4.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Ніж філетувальний для риби 21 см. Practica ICEL</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>350 грн</span> 320 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+                <span class="sale"></span>
+            </div>
+            <div class="hot_item">
+                <div class="hot-img"><a href="#"><img src="./img/hot-prod1.jpg" alt="hot"></a></div>
+                <div class="hot-title"><a href="#">Обвалювальний ніж 15 см. ICEL (Portugal)</a></div>
+                <div class="hot-article">Артикул: 000</div>
+                <div class="hot-price"><span>250 грн</span> 225 грн.</div>
+                <div class="hot-button"><button>Купити</button></div>
+                <span class="sale"></span>
+            </div>
+        </div>
+    </div>
+    <!--./Hot-->
+
+
+    
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer container">
+            <div class="footerlogo">
+                <a href="#"><img class="lfoodfooter" src="./img/lfoodfooter.svg" alt="img"/></a>
+                <a href="#"><img src="./img/bramarfooter.svg" alt="img"/></a>
+            </div>
+            <div class="footer-center">
+                <div class="footerleft">
+                    <div class="fprofile">
+                        <div>
+                            <a href="#">Мій профіль</a><br/>
+                            <a href="#">Зворотній звязок</a><br/>
+                            <a href="#">Контакти</a>
+                        </div>
+                        <div>
+                            <div class="emailtitle">Підписатися на розсилку</div>
+                            <form action="#">
+                                <input class="finp1" type="text" placeholder="Ім’я"><br/>
+                                <input class="finp2" type="text" placeholder="E-mail">
+                                <button></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="fcontact">
+                        <div class="fctitle">Адреса</div>
+                        <p>
+                            Правий берег: 03124,<br/>Київ, вул. Миколи Василенка, 21
+                        </p>
+                        <p>
+                            Лівий берег: 02098,<br/>Київ, Дніпровська набережна,<br/>14В, офіс 233
+                        </p>
+                        <div class="graph">
+                            <div>
+                                <div class="fctitle">Телефон</div>
+                                <p>+38 067 220 05 38</p>
+                                <p>+38 067 220 06 38</p>
+                            </div>
+                            <div>
+                                <div class="fctitle">Графік роботи</div>
+                                <p>Пн - Пт 08:00 - 17:00</p>
+                                <p>
+                                    <a href="#"><img src="./img/footer-in.svg" alt="img"></a>
+                                    <a href="#"><img src="./img/footer-fb.svg" alt="img"></a>
+                                    <a href="#"><img src="./img/footer-youtube.svg" alt="img"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerright">
+                    <div>
+                        <div class="fctitle">Каталог</div>
+                        <ul>
+                            <li><a href="#">Ножі</a></li>
+                            <li><a href="#">Заточні пристрої</a></li>
+                            <li><a href="#">Спецодяг та взуття</a></li>
+                            <li><a href="#">Промисловий інвентар HACCP</a></li>
+                            <li><a href="#">Обладнання</a></li>
+                            <li><a href="#">HoReCa</a></li>
+                            <li><a href="#">Допоміжні товари</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="fctitle">Меню</div>
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Гарячі пропозиції</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Новини</a></li>
+                            <li><a href="#">Про компанію</a></li>
+                            <li><a href="#">Сертифікати дистриб'юторства</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Доставка та оплата</a></li>
+                            <li><a href="#">Гарантія та сервіс</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <a href="#"><img src="./img/partner1.png" alt="partners"></a>
+                <a href="#"><img src="./img/partner2.png" alt="partners"></a>
+                <a href="#"><img src="./img/partner3.png" alt="partners"></a>
+                <a href="#"><img src="./img/partner4.png" alt="partners"></a>
+                <a href="#"><img src="./img/partner5.png" alt="partners"></a>
+                <a href="#"><img src="./img/partner6.png" alt="partners"></a>
+                <a href="#"><img src="./img/partner7.png" alt="partners"></a>
+            </div>
+        </div>
+    </footer>
+    <!--./Footer-->
+
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/hystmodal.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/hystmodal.min.js"></script>
+    <script>
+        // Modals
+        if (typeof HystModal !== "undefined") {
+            var xMod = new HystModal({
+                linkAttributeName: 'data-hystmodal',
+            });
+        }
+    </script>
+
+
+    <div class="hystmodal" id="myModal" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                
+                
+                <h4>Доставка та оплата</h4>  
+                <p>
+                    <strong>Доставка у відділення та поштомати «Нова почта», «Джастін»</strong></p>
+                <p> За допомогою доставки Ви можете отримати товар навіть у найвіддаленіших куточках України.
+                </p>
+            <p><strong>Адресна доставка від Нової пошти</strong></p>
+        <p>Доставка кур'єром на адресу проводиться до входу в будівлю. Вартість доставки згідно тарифів перевізника
+                    </p><p><strong>З шоуруму</strong><br/>
+                Самовивіз товару за адресою: Київ, вул. Миколи Василенка, 21</p>
+                    <p><strong>Способи замовлення.</strong> Оформити замовлення можливо через:</p>
+                    <p>▪ корзину сайту;<br/>
+                    ▪ по телефону: +38 067 220-05-38;<br/>
+                    ▪ ak@bramar.com;<br/>
+                    ▪ через viber або telegram +38 067 220-05-38;</p>
+                <p>Необхідна інформація:</p>
+                    ▪ прізвище та ім’я;<br/>
+                    ▪ місто і спосіб доставки;<br/>
+                    ▪ номер мобільного для зв’язку;<br/>
+                    ▪ артикул і кількість бажаного товару;</p>
+                <p>Оплата по безготівковому рахунку здійснюється в касі відділення будь-якого банку або розрахункового рахунка Вашого підприємства.
+                </p>
+                <p>Доставка замовлення можлива після зарахування коштів на наш розрахунковий рахунок.</p>
+            <p class="h4">Приємних покупок!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+    
+    <div class="hystmodal" id="myModal2" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <h4>Гарантія та сервісне обслуговування</h4>
+                <p>
+                    З питань сервісного обслуговування і повернення товару дзвоніть нам<br/>за тел .: * (щодня з 09:00 до 17:00)
+                </p>
+                <p><strong>Я можу обміняти товар або повернути товар?</strong></p>
+                <p><strong>Де і як можна зробити обмін або повернення товару?</strong></p>
+                <p><strong>Куди звертатись з питань гарантійного обслуговування?</strong></p>
+                <p><strong>Яка гарантія на цей товар?</strong></p>
+                <p><strong>Сервісний центр не може відремонтувати мій товар у гарантійний період?</strong></p>
+                <p><strong>У яких випадках гарантія не надається?</strong></p>
+                <p><strong>Гарантійні зобов'язання і гарантійне обслуговування не поширюється на Товар у разі</strong></p><br/>
+                <p>044-228-35-25 — З питань сервісного обслуговування і повернення товару</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hystmodal" id="myModal3" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <h4>Корзина</h4>
+                <div class="qcart">
+                    <div>1.</div>
+                    <div><img src="./img/qcart1.png" alt="q"/></div>
+                    <div><a href="#" class="qtitle">Безпечний ніж з висувним лезом<br/>SECUNORM <span>(Артикул 000)</span></a>
+                        <div class="prod-price">
+                            <div class="quant">
+                                <span id="minus-qty">-</span>
+                                  <input id="input-quantity" type="text" name="quantity" value="1" size="1" />
+                                  <span id="plus-qty">+</span>
+                            </div>
+                            <div class="price">493 грн</div>
+                            <span class="q"></span>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="qcart">
+                    <div>2.</div>
+                    <div><img src="./img/qcart2.png" alt="q"/></div>
+                    <div><a href="#" class="qtitle">Безпечний ніж з висувним лезом<br/>SECUNORM <span>(Артикул 000)</span></a>
+                        <div class="prod-price">
+                            <div class="quant">
+                                <span id="minus-qty">-</span>
+                                  <input id="input-quantity" type="text" name="quantity" value="1" size="1" />
+                                  <span id="plus-qty">+</span>
+                            </div>
+                            <div class="price">493 грн</div>
+                            <span class="q"></span>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="qcart">
+                    <div>3.</div>
+                    <div><img src="./img/qcart3.png" alt="q"/></div>
+                    <div><a href="#" class="qtitle">Безпечний ніж з висувним лезом<br/>SECUNORM <span>(Артикул 000)</span></a>
+                        <div class="prod-price">
+                            <div class="quant">
+                                <span id="minus-qty">-</span>
+                                  <input id="input-quantity" type="text" name="quantity" value="1" size="1" />
+                                  <span id="plus-qty">+</span>
+                            </div>
+                            <div class="price">493 грн</div>
+                            <span class="q"></span>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="qtotal">
+                    Загалом: 7 486грн
+                </div>
+                <div class="qorder">
+                    <button>Оформити замовлення</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="hystmodal" id="myModal4" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <h4>Вхід</h4>
+                <form action="">
+                    <label for="">E-mail або телефон</label><br/>
+                    <input type="text" class="authinp1"><br/>
+                    <label for="">Пароль</label><br/>
+                    <input type="text" class="authinp2"><img src="./img/glaz.svg" alt="authinp2"><br/><br/>
+                    <div class="acenter"><label for=""><input type="checkbox"> Запамятати мене</label></div>
+                    <div class="acenter"><a href="#" data-hystmodal="#myModal5">Нагадати пароль</a></div><br/>
+                    <div class="acenter"><button>Увійти</button></div><br/>
+                    <div class="acenter"><a href="#" data-hystmodal="#myModal6">Зареєструватися</a></div>
+                </form>
+                <div class="authsocial">
+                    <div>Або увійдіть за допомогою:</div>
+                    <div>
+                        <a href="#"><img src="./img/login1.svg" alt="alt"></a>
+                        <a href="#"><img src="./img/login2.svg" alt="alt"></a>
+                        <a href="#"><img src="./img/login3.svg" alt="alt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="hystmodal" id="myModal5" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <h4>Вхід</h4>
+                <a href="#" data-hystmodal="#myModal4" class="nazad">
+                    Вхід
+                </a>
+                <form action="">
+                    <label for="">E-mail або телефон</label><br/>
+                    <input type="text" class="authinp1"><br/><br/>
+                    <div class="acenter"><button data-hystmodal="#myModal7">Відновити</button></div><br/>
+                    <div class="acenter"><a href="#" data-hystmodal="#myModal6">Зареєструватися</a></div>
+                </form>
+                <div class="authsocial">
+                    <div>Або увійдіть за допомогою:</div>
+                    <div>
+                        <a href="#"><img src="./img/login1.svg" alt="alt"></a>
+                        <a href="#"><img src="./img/login2.svg" alt="alt"></a>
+                        <a href="#"><img src="./img/login3.svg" alt="alt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hystmodal" id="myModal6" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <h4>Вхід</h4>
+                <a href="#" data-hystmodal="#myModal4" class="nazad">
+                    Вхід
+                </a>
+                <form class="formwidth" action="" >
+                    <div class="formgrid">
+                        <div>
+                        <label for="">Ваше ім’я</label><br/>
+                        <input type="text" ><br/>
+                        <label for="">Компанія</label><br/>
+                        <input type="text" ><br/>
+                        <label for="">E-mail</label><br/>
+                        <input type="text" ><br/>
+                    </div>
+                    <div>
+                        <label for="">Прізвище</label><br/>
+                        <input type="text" ><br/>
+                        <label for="">Телефон</label><br/>
+                        <input type="text" ><br/>
+                        <label for="">Пароль</label><br/>
+                        <input type="text" class="authinp2"><img src="./img/glaz.svg" alt="authinp2">
+                    </div>
+                    </div><br/>
+                    <div class="acenter"><button class="register">Зареєструватися</button></div><br/>
+                    
+                </form>
+                <div class="authsocial">
+                    <div>Або увійдіть за допомогою:</div>
+                    <div>
+                        <a href="#"><img src="./img/login1.svg" alt="alt"></a>
+                        <a href="#"><img src="./img/login2.svg" alt="alt"></a>
+                        <a href="#"><img src="./img/login3.svg" alt="alt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="hystmodal" id="myModal7" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <div class="sms">
+                    На Вашу електронну адресу був відправлений лист<br/>з тимчасовим паролем
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hystmodal" id="myModal9" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <h4>Редагувати пароль</h4>
+                
+                <form action="">
+                    <label for="">Старий пароль</label><br/>
+                    <div class="showpass"><input type="password" class="authinp1"><img src="./img/glaz.svg" alt="alt"/><br/></div>
+                    <label for="">Новий пароль</label>
+                    <div class="showpass"><input type="password" class="authinp1"><img src="./img/glaz.svg" alt="alt"/><br/></div>
+                    <label for="">Повторіть новий пароль</label>
+                    <div class="showpass"><input type="password" class="authinp1"><img src="./img/glaz.svg" alt="alt"/><br/></div>
+                    <div class="acenter"><a href="#" data-hystmodal="#myModal6">Нагадати пароль</a></div><br/>
+                    <div class="aright"><button data-hystmodal="#myModal7">Оновити пароль</button></div><br/>
+                    
+                </form>
+                <br/><br/>
+
+        </div>
+    </div>
+
+    <div class="hystmodal" id="myModal10" aria-hidden="true">
+        <div class="hystmodal__wrap">
+            <div class="hystmodal__window" role="dialog" aria-modal="true">
+                <button data-hystclose class="hystmodal__close">&times;</button>
+                <p class="thanks1">Дякуємо за замовлення!</p>
+                <p class="thanks2">Перевірте, будь ласка, свою пошту.</p>
+                <p class="thanks3">Ми будемо Вам дуже вдячні за відгук🙂</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>

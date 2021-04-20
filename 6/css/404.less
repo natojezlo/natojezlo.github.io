@@ -1,0 +1,151 @@
+// main: stylesheet.less
+
+
+.p404{
+    background: url(../img/404.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    .page404{
+        width: 100%;
+        padding-top: 250px;
+        p{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 50px;
+           
+        }
+        .pbutton{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 680px;
+            margin: 0 auto;
+            grid-gap: 50px;
+            margin-bottom: 50px;
+            font-size: 25px;
+          
+            a{
+                display: inline-block;
+                padding: 10px 15px;
+                border:1px solid @blue;
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            div:first-child{
+                a{
+                    color: #000;
+                }
+            }
+            div:last-child{
+                a{
+                    color: #FFF;
+                    background: @blue;
+                }
+            }
+            
+        }
+        .pphone{
+            font-size: 25px;
+            font-weight: 500;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 80%;
+            margin: 0 auto;
+            div:first-child{}
+            div:last-child{
+                text-align: right;
+                a{
+                    color: @blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+    
+    
+.p404{
+    background:#f1f1f1 url(../img/404.png) top center no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    .page404{
+        width: 100%;
+        padding-top: 0px;
+        padding: 20px;
+        p{
+            text-align: center;
+            font-size: 25px;
+            font-weight: 500;
+            margin-bottom: 50px;
+           
+        }
+        .pbutton{
+            display: block;
+            grid-template-columns: 1fr 1fr;
+            max-width: 680px;
+            margin: 0 auto;
+            grid-gap: 50px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+          
+            a{
+                display: inline-block;
+                padding: 10px 15px;
+                border:1px solid @blue;
+                text-decoration: none;
+                margin-bottom: 10px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            div:first-child{
+                a{
+                    color: #000;
+                }
+            }
+            div:last-child{
+                a{
+                    color: #FFF;
+                    background: @blue;
+                }
+            }
+            
+        }
+        .pphone{
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            grid-template-columns: 1fr 1fr;
+            width: 80%;
+            margin: 0 auto;
+            div:first-child{
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            div:last-child{
+                text-align: center;
+                a{
+                    color: @blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+}

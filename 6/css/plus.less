@@ -1,0 +1,91 @@
+// main: stylesheet.less
+
+#plus{
+    .title{
+        font-size: 50px;
+        color:@blue;
+        border-bottom: 1px solid #353535;
+        padding: 15px 0;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .plus{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        font-size: 20px;
+        div{
+            p{
+                margin-bottom: 25px;
+                strong{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1340px){
+    #plus{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:860px){
+    #plus{
+        .title{
+            font-size: 30px;
+            color:@blue;
+            border-bottom: 1px solid #353535;
+            padding: 10px 0;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .plus{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            font-size: 20px;
+            div{
+                p{
+                    margin-bottom: 25px;
+                    strong{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:640px){
+    #plus{
+        .title{
+            font-size: 30px;
+            color:@blue;
+            border-bottom: 1px solid #353535;
+            padding: 10px 0;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .plus{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            font-size: 15px;
+            div{
+                p{
+                    margin-bottom: 10px;
+                    strong{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

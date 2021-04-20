@@ -1,0 +1,462 @@
+// main: stylesheet.less
+
+
+#hot{
+    position: relative;
+    margin-bottom: 40px;
+    .title{
+        font-size: 50px;
+        color:@blue;
+        border-bottom: 1px solid #353535;
+        padding: 15px 0;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hot{
+        margin:0 -15px;
+        .slick-slide{
+            box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.25);
+            margin: 0 15px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            transition: 0.5s box-shadow;
+            &:hover{
+                box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.55);
+            }
+        }
+        .hot_item{
+            position: relative;
+            background: #FFF; 
+            text-align: center;
+            .hot-img{
+                margin-bottom: 25px;
+                width: 100%;
+            }
+            .hot-title{
+                line-height: 24px;
+                margin-bottom: 35px;
+                padding: 0 5px;
+                min-height: 50px;
+                a{
+                    color:@darkgrey;
+                    text-decoration: none;
+                }
+            }
+            .hot-article{
+                font-size: 12px;
+                font-style: italic;
+                padding: 0 20px;
+                margin-bottom: 5px;
+            }
+            .hot-price{
+                color:@darkgrey;
+                padding: 0 20px;
+                font-size: 25px;
+                margin-bottom: 20px;
+                span{
+                    font-size: 16px;
+                    color: rgba(0,0,0,0.6);
+                    position: relative;
+                    margin-right: 5px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top:0;
+                        left:50%;
+                        transform: translateX(-50%);
+                        width: 20px;
+                        height: 20px;
+                        background: url(../img/x.svg) center center no-repeat;
+                    }
+                }
+            }
+            .hot-button{
+                padding: 0 20px;
+                margin-bottom: 40px;
+                button{
+                    padding: 8px 70px 8px 50px;
+                    background: @blue;
+                    color:#FFF;
+                    border:none;
+                    position: relative;
+                    border-radius: 1px;
+                    cursor: pointer;
+                    &::after{
+                        content:"";
+                        width:21px;
+                        height: 24px;
+                        position: absolute;
+                        right:40px;
+                        top:5px;
+                        background: url(../img/hot-cart.svg);
+                    }
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                    &:active{
+                        background:@yellow;
+                    }
+                }
+            }
+            .sale{
+                width:76px;
+                height:76px;
+                position: absolute;
+                left: -16px;
+                top:-16px;
+                background: url(../img/sale.svg);
+                
+            }
+        }
+        
+        .slick-prev{
+            position: absolute;
+            right:55px;
+            bottom:-25px;
+            width: 29px;
+            height: 16px;
+            background: url(../img/hot-left.svg) center center no-repeat;
+            text-indent:-9999px;
+            border:none;
+            cursor: pointer;
+            transition: 0.5s opacity;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        .slick-next{
+            position: absolute;
+            right:15px;
+            bottom:-25px;
+            width: 29px;
+            height: 16px;
+            background: url(../img/hot-right.svg) center center no-repeat;
+            text-indent:-9999px;
+            border:none;
+            cursor: pointer;
+            transition: 0.5s opacity;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:1340px){
+    #hot{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:960px){
+
+    
+#hot{
+    position: relative;
+    margin-bottom: 40px;
+    .title{
+        font-size: 30px;
+        color:@blue;
+        border-bottom: 1px solid #353535;
+        padding: 15px 0;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .hot{
+        margin:0 -15px;
+        
+        .slick-slide{
+            box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.25);
+            margin: 0 15px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            transition: 0.5s box-shadow;
+            &:hover{
+                box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.55);
+            }
+        }
+        .hot_item{
+            position: relative;
+            background: #FFF; 
+            text-align: center;
+            .hot-img{
+                margin-bottom: 25px;
+                width: 100%;
+            }
+            .hot-title{
+                line-height: 24px;
+                margin-bottom: 35px;
+                padding: 0 5px;
+                min-height: 50px;
+                a{
+                    color:@darkgrey;
+                    text-decoration: none;
+                }
+            }
+            .hot-article{
+                font-size: 12px;
+                font-style: italic;
+                padding: 0 20px;
+                margin-bottom: 5px;
+            }
+            .hot-price{
+                color:@darkgrey;
+                padding: 0 20px;
+                font-size: 25px;
+                margin-bottom: 20px;
+                span{
+                    font-size: 16px;
+                    color: rgba(0,0,0,0.6);
+                    position: relative;
+                    margin-right: 5px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top:0;
+                        left:50%;
+                        transform: translateX(-50%);
+                        width: 20px;
+                        height: 20px;
+                        background: url(../img/x.svg) center center no-repeat;
+                    }
+                }
+            }
+            .hot-button{
+                padding: 0 10px;
+                margin-bottom: 40px;
+                button{
+                    padding: 8px 50px 8px 20px;
+                    background: @blue;
+                    color:#FFF;
+                    border:none;
+                    position: relative;
+                    border-radius: 1px;
+                    cursor: pointer;
+                    &::after{
+                        content:"";
+                        width:21px;
+                        height: 24px;
+                        position: absolute;
+                        right:20px;
+                        top:5px;
+                        background: url(../img/hot-cart.svg);
+                    }
+                    &:hover{
+                        opacity: 0.8;
+                    }
+                    &:active{
+                        background:@yellow;
+                    }
+                }
+            }
+            .sale{
+                width:76px;
+                height:76px;
+                position: absolute;
+                left: -16px;
+                top:-16px;
+                background: url(../img/sale.svg);
+                
+            }
+        }
+        
+        .slick-prev{
+            position: absolute;
+            right:55px;
+            bottom:-25px;
+            width: 29px;
+            height: 16px;
+            background: url(../img/hot-left.svg) center center no-repeat;
+            text-indent:-9999px;
+            border:none;
+            cursor: pointer;
+            transition: 0.5s opacity;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+        .slick-next{
+            position: absolute;
+            right:15px;
+            bottom:-25px;
+            width: 29px;
+            height: 16px;
+            background: url(../img/hot-right.svg) center center no-repeat;
+            text-indent:-9999px;
+            border:none;
+            cursor: pointer;
+            transition: 0.5s opacity;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:460px){
+
+    
+    #hot{
+        position: relative;
+        margin-bottom: 40px;
+        .title{
+            font-size: 30px;
+            color:@blue;
+            border-bottom: 1px solid #353535;
+            padding: 15px 0;
+            font-weight: 500;
+            margin-bottom: 50px;
+        }
+        .hot{
+            margin:0 0px;
+            
+            .slick-slide{
+                box-shadow: 4px 4px 4px rgba(68, 68, 68, 0.25);
+                margin: 0 0px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                transition: 0.5s box-shadow;
+                &:hover{
+                    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.55);
+                }
+            }
+            .hot_item{
+                position: relative;
+                background: #FFF; 
+                text-align: center;
+                .hot-img{
+                    margin-bottom: 25px;
+                    width: 100%;
+                }
+                .hot-title{
+                    line-height: 24px;
+                    margin-bottom: 35px;
+                    padding: 0 5px;
+                    min-height: 50px;
+                    a{
+                        color:@darkgrey;
+                        text-decoration: none;
+                    }
+                }
+                .hot-article{
+                    font-size: 12px;
+                    font-style: italic;
+                    padding: 0 20px;
+                    margin-bottom: 5px;
+                }
+                .hot-price{
+                    color:@darkgrey;
+                    padding: 0 20px;
+                    font-size: 25px;
+                    margin-bottom: 20px;
+                    span{
+                        font-size: 16px;
+                        color: rgba(0,0,0,0.6);
+                        position: relative;
+                        margin-right: 5px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top:0;
+                            left:50%;
+                            transform: translateX(-50%);
+                            width: 20px;
+                            height: 20px;
+                            background: url(../img/x.svg) center center no-repeat;
+                        }
+                    }
+                }
+                .hot-button{
+                    padding: 0 10px;
+                    margin-bottom: 40px;
+                    button{
+                        padding: 8px 50px 8px 20px;
+                        background: @blue;
+                        color:#FFF;
+                        border:none;
+                        position: relative;
+                        border-radius: 1px;
+                        cursor: pointer;
+                        &::after{
+                            content:"";
+                            width:21px;
+                            height: 24px;
+                            position: absolute;
+                            right:20px;
+                            top:5px;
+                            background: url(../img/hot-cart.svg);
+                        }
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                        &:active{
+                            background:@yellow;
+                        }
+                    }
+                }
+                .sale{
+                    width:76px;
+                    height:76px;
+                    position: absolute;
+                    left: -16px;
+                    top:-16px;
+                    background: url(../img/sale.svg);
+                    
+                }
+            }
+            
+            .slick-prev{
+                position: absolute;
+                right:55px;
+                bottom:-25px;
+                width: 29px;
+                height: 16px;
+                background: url(../img/hot-left.svg) center center no-repeat;
+                text-indent:-9999px;
+                border:none;
+                cursor: pointer;
+                transition: 0.5s opacity;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+            .slick-next{
+                position: absolute;
+                right:15px;
+                bottom:-25px;
+                width: 29px;
+                height: 16px;
+                background: url(../img/hot-right.svg) center center no-repeat;
+                text-indent:-9999px;
+                border:none;
+                cursor: pointer;
+                transition: 0.5s opacity;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+    
+    
+    }

@@ -1,0 +1,1203 @@
+// main: stylesheet.less
+
+.product-default{
+    margin-bottom: 30px;
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight: 400;
+        border-bottom: 1px solid #353535;
+        padding-bottom: 15px;
+    }
+    .pr-image{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+       
+        .prodleft{
+            .slider{
+                display: grid;
+                grid-template-columns:85px 1fr 484px;
+                align-items: center;
+                .slider-controll{
+                    .slider-item{
+                        margin-bottom: 30px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        img{
+                            border: 2px solid #dedede;
+                            cursor: pointer;
+                            &:hover{
+                                border: 2px solid #333;
+                            }
+                        }
+                    }
+                }
+                .slider-win{}
+            }
+            .proddesktitle{
+                font-size: 25px;
+                font-weight: 500;
+                border-bottom: 1px solid #353535;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                margin-top: 40px;
+            }
+            .proddesk{
+                p{
+                    margin: 20px 0;
+                    a{
+                        color:@yellow;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .prodright{
+            
+            .brand{
+                padding-left: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 30px;
+                .brandleft{
+                    font-weight: 500;
+                    a{
+                        color: @blue;
+                        text-decoration: none;
+                    }
+                }
+                .brandright{
+                    text-align: right;
+                    font-style: italic;
+                    span{
+                        color: #9FD686;
+                    }
+                }
+            }
+            .prod-price{
+                padding-left: 20px;
+                display: grid;
+                grid-template-columns:220px 1fr ;
+                align-items: center;
+                margin-bottom: 55px;
+                .quant{
+                    span{
+                        display: inline-block;
+                        height: 30px;
+                        background: @blue;
+                        color: #FFF;
+                        width:40px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 22px;
+                        cursor: pointer;
+                        vertical-align: middle;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                        &:active{
+                            background: @yellow;
+                        }
+                    }
+                    input{
+                        border: 1px solid rgba(0, 0, 0, 0.6);
+                        display: inline-block;
+                        vertical-align: middle;
+                        background: #FFF;
+                        text-align: center;
+                        height: 30px;
+                        width: 85px;
+                    }
+                }
+                .price{
+                    font-size: 50px;
+                }
+            }
+            .addcart{
+                margin-bottom: 80px;
+                padding-left: 20px;
+                .baddcart{
+                    background: @blue;
+                    color:#FFF;
+                    font-size: 25px;
+                    position: relative;
+                    width: 290px;
+                    height: 56px;
+                    border: none;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-right: 30px;
+                    cursor: pointer;                    
+                    &:hover{opacity: 0.7;}
+                    &:active{background: @yellow;}
+                    &::before{
+                        background: url(../img/hot-cart.svg);
+                        background-size: cover;
+                        display: inline-block;
+                        width: 29px;
+                        height: 35px;
+                        content: "";
+                        position: absolute;
+                        right:80px;
+                        top:7px;
+                    }
+                }
+                .addzakl{
+                    display: inline-block;
+                    height: 56px;
+                    padding: 0 10px;
+                    color: @yellow;
+                    border: 1px solid @blue;
+                    vertical-align: top;
+                    background: #FFF;
+                    cursor: pointer;                    
+                    &:hover{opacity: 0.7;}
+                    &:active{background: @blue;}
+                }
+            }
+
+
+            .block-shipping{
+                margin-bottom: 40px;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                grid-gap: 40px;
+                padding: 25px;
+                border: 1px solid rgba(0, 0, 0, 0.6);
+                font-size: 20px;
+                a{
+                    font-size: 16px;
+                    text-decoration: none;
+                    color:@blue;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .review-head{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                margin-bottom: 40px;
+                padding-bottom: 10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                .rtl{
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: @blue;
+                }
+                .rtr{
+                    text-align: right;
+                    a{
+                        font-weight: 500;
+                        color: @blue;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .box-filter-fixed{
+                position: relative;
+                max-height: 235px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar-track{
+                    background: url(../img/trtop.svg) top 10px center no-repeat, 
+                    url(../img/trbot.svg) bottom 10px center no-repeat;
+                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    margin: 0 -2px;
+        
+                    background-size: 16px 16px;
+                }
+                
+                &::-webkit-scrollbar
+                {
+                    width: 22px;
+                    background-color: #F3F3F3;
+                    
+                  
+                }
+                &::-webkit-scrollbar-thumb
+                {
+                   
+                    background:url(../img/track.png) center center no-repeat;
+                    margin:2px;
+                    margin-top: 15px;
+                    height: 40px;
+                }
+                .rev-item{
+                    position: relative;
+                    div{
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        padding-left: 20px;
+                        strong{
+                            font-weight: 500;
+                        }
+                        &.like{
+                            margin-bottom: 35px;
+                            padding-left: 30px;
+                            &::before{
+                                position: absolute;
+                                left: 0;
+                                bottom: 10px;
+                                width: 1px;
+                                height: 100%;
+                                background: #000;
+                                content: "";
+                            }
+                            &::after{
+                                position: absolute;
+                                left: 0;
+                                bottom: 10px;
+                                width: 20px;
+                                height: 1px;
+                                background: #000;
+                                content: "";
+                            }
+                            span{
+                                color: @blue;
+                                cursor: pointer;
+                                font-weight: 400;
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+                                &::after{
+                                    content: "";
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: url(../img/loke.svg);
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+        
+    }
+}
+
+@media screen and (max-width:1340px){
+
+.product-default{
+    padding: 0 0px;
+}
+}
+
+
+@media screen and (max-width:1024px){
+   
+.product-default{
+    margin-bottom: 30px;
+    h1{
+        text-align: center;
+        font-size: 34px;
+        font-weight: 400;
+        border-bottom: 1px solid #353535;
+        padding-bottom: 15px;
+    }
+    .pr-image{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+       
+        .prodleft{
+            .slider{
+                display: grid;
+                grid-template-columns:50px 1fr 350px;
+                align-items: center;
+                .slider-controll{
+                    .slider-item{
+                        margin-bottom: 30px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        img{
+                            border: 2px solid #dedede;
+                            cursor: pointer;
+                            &:hover{
+                                border: 2px solid #333;
+                            }
+                        }
+                    }
+                }
+                .slider-win{}
+            }
+            .proddesktitle{
+                font-size: 25px;
+                font-weight: 500;
+                border-bottom: 1px solid #353535;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+                margin-top: 40px;
+            }
+            .proddesk{
+                p{
+                    margin: 20px 0;
+                    a{
+                        color:@yellow;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .prodright{
+            
+            .brand{
+                padding-left: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 30px;
+                .brandleft{
+                    font-weight: 500;
+                    a{
+                        color: @blue;
+                        text-decoration: none;
+                    }
+                }
+                .brandright{
+                    text-align: right;
+                    font-style: italic;
+                    span{
+                        color: #9FD686;
+                    }
+                }
+            }
+            .prod-price{
+                padding-left: 20px;
+                display: grid;
+                grid-template-columns:220px 1fr ;
+                align-items: center;
+                margin-bottom: 55px;
+                .quant{
+                    span{
+                        display: inline-block;
+                        height: 30px;
+                        background: @blue;
+                        color: #FFF;
+                        width:40px;
+                        line-height: 30px;
+                        text-align: center;
+                        font-size: 22px;
+                        cursor: pointer;
+                        vertical-align: middle;
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                        &:active{
+                            background: @yellow;
+                        }
+                    }
+                    input{
+                        border: 1px solid rgba(0, 0, 0, 0.6);
+                        display: inline-block;
+                        vertical-align: middle;
+                        background: #FFF;
+                        text-align: center;
+                        height: 30px;
+                        width: 85px;
+                    }
+                }
+                .price{
+                    font-size: 50px;
+                }
+            }
+            .addcart{
+                margin-bottom: 80px;
+                padding-left: 20px;
+                .baddcart{
+                    background: @blue;
+                    color:#FFF;
+                    font-size: 25px;
+                    position: relative;
+                    width: 290px;
+                    height: 56px;
+                    border: none;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-right: 30px;
+                    cursor: pointer;                    
+                    &:hover{opacity: 0.7;}
+                    &:active{background: @yellow;}
+                    &::before{
+                        background: url(../img/hot-cart.svg);
+                        background-size: cover;
+                        display: inline-block;
+                        width: 29px;
+                        height: 35px;
+                        content: "";
+                        position: absolute;
+                        right:80px;
+                        top:7px;
+                    }
+                }
+                .addzakl{
+                    display: inline-block;
+                    height: 56px;
+                    padding: 0 10px;
+                    color: @yellow;
+                    border: 1px solid @blue;
+                    vertical-align: top;
+                    background: #FFF;
+                    cursor: pointer;                    
+                    &:hover{opacity: 0.7;}
+                    &:active{background: @blue;}
+                }
+            }
+
+
+            .block-shipping{
+                margin-bottom: 40px;
+                display: grid;
+                grid-template-columns: 50px 1fr;
+                grid-gap: 40px;
+                padding: 25px;
+                border: 1px solid rgba(0, 0, 0, 0.6);
+                font-size: 20px;
+                a{
+                    font-size: 16px;
+                    text-decoration: none;
+                    color:@blue;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .review-head{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                margin-bottom: 40px;
+                padding-bottom: 10px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                .rtl{
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: @blue;
+                }
+                .rtr{
+                    text-align: right;
+                    a{
+                        font-weight: 500;
+                        color: @blue;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .box-filter-fixed{
+                position: relative;
+                max-height: 235px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar-track{
+                    background: url(../img/trtop.svg) top 10px center no-repeat, 
+                    url(../img/trbot.svg) bottom 10px center no-repeat;
+                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    margin: 0 -2px;
+        
+                    background-size: 16px 16px;
+                }
+                
+                &::-webkit-scrollbar
+                {
+                    width: 22px;
+                    background-color: #F3F3F3;
+                    
+                  
+                }
+                &::-webkit-scrollbar-thumb
+                {
+                   
+                    background:url(../img/track.png) center center no-repeat;
+                    margin:2px;
+                    margin-top: 15px;
+                    height: 40px;
+                }
+                .rev-item{
+                    position: relative;
+                    div{
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                        padding-left: 20px;
+                        strong{
+                            font-weight: 500;
+                        }
+                        &.like{
+                            margin-bottom: 35px;
+                            padding-left: 30px;
+                            &::before{
+                                position: absolute;
+                                left: 0;
+                                bottom: 10px;
+                                width: 1px;
+                                height: 100%;
+                                background: #000;
+                                content: "";
+                            }
+                            &::after{
+                                position: absolute;
+                                left: 0;
+                                bottom: 10px;
+                                width: 20px;
+                                height: 1px;
+                                background: #000;
+                                content: "";
+                            }
+                            span{
+                                color: @blue;
+                                cursor: pointer;
+                                font-weight: 400;
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+                                &::after{
+                                    content: "";
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 18px;
+                                    background: url(../img/loke.svg);
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+        
+    }
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:870px){
+   
+    .product-default{
+        margin-bottom: 30px;
+        h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            border-bottom: 1px solid #353535;
+            padding-bottom: 15px;
+        }
+        .pr-image{
+            display: block;
+          
+            .prodleft{
+                .slider{
+                    display: grid;
+                    grid-template-columns:100px 1fr 550px;
+                    align-items: center;
+                    .slider-controll{
+                        .slider-item{
+                            margin-bottom: 30px;
+                            &:last-child{
+                                margin-bottom: 0px;
+                            }
+                            img{
+                                border: 2px solid #dedede;
+                                cursor: pointer;
+                                &:hover{
+                                    border: 2px solid #333;
+                                }
+                            }
+                        }
+                    }
+                    .slider-win{}
+                }
+                .proddesktitle{
+                    font-size: 25px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #353535;
+                    padding-bottom: 10px;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                }
+                .proddesk{
+                    p{
+                        margin: 20px 0;
+                        a{
+                            color:@yellow;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .prodright{
+                
+                .brand{
+                    padding-left: 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    padding-top: 30px;
+                    .brandleft{
+                        font-weight: 500;
+                        a{
+                            color: @blue;
+                            text-decoration: none;
+                        }
+                    }
+                    .brandright{
+                        text-align: right;
+                        font-style: italic;
+                        span{
+                            color: #9FD686;
+                        }
+                    }
+                }
+                .prod-price{
+                    padding-left: 20px;
+                    display: grid;
+                    grid-template-columns:220px 1fr ;
+                    align-items: center;
+                    margin-bottom: 55px;
+                    .quant{
+                        span{
+                            display: inline-block;
+                            height: 30px;
+                            background: @blue;
+                            color: #FFF;
+                            width:40px;
+                            line-height: 30px;
+                            text-align: center;
+                            font-size: 22px;
+                            cursor: pointer;
+                            vertical-align: middle;
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                            &:active{
+                                background: @yellow;
+                            }
+                        }
+                        input{
+                            border: 1px solid rgba(0, 0, 0, 0.6);
+                            display: inline-block;
+                            vertical-align: middle;
+                            background: #FFF;
+                            text-align: center;
+                            height: 30px;
+                            width: 85px;
+                        }
+                    }
+                    .price{
+                        font-size: 50px;
+                    }
+                }
+                .addcart{
+                    margin-bottom: 80px;
+                    padding-left: 20px;
+                    .baddcart{
+                        background: @blue;
+                        color:#FFF;
+                        font-size: 25px;
+                        position: relative;
+                        width: 290px;
+                        height: 56px;
+                        border: none;
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-right: 30px;
+                        cursor: pointer;                    
+                        &:hover{opacity: 0.7;}
+                        &:active{background: @yellow;}
+                        &::before{
+                            background: url(../img/hot-cart.svg);
+                            background-size: cover;
+                            display: inline-block;
+                            width: 29px;
+                            height: 35px;
+                            content: "";
+                            position: absolute;
+                            right:80px;
+                            top:7px;
+                        }
+                    }
+                    .addzakl{
+                        display: inline-block;
+                        height: 56px;
+                        padding: 0 10px;
+                        color: @yellow;
+                        border: 1px solid @blue;
+                        vertical-align: top;
+                        background: #FFF;
+                        cursor: pointer;                    
+                        &:hover{opacity: 0.7;}
+                        &:active{background: @blue;}
+                    }
+                }
+    
+    
+                .block-shipping{
+                    margin-bottom: 40px;
+                    display: grid;
+                    grid-template-columns: 50px 1fr;
+                    grid-gap: 40px;
+                    padding: 25px;
+                    border: 1px solid rgba(0, 0, 0, 0.6);
+                    font-size: 20px;
+                    a{
+                        font-size: 16px;
+                        text-decoration: none;
+                        color:@blue;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+    
+                .review-head{
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                    margin-bottom: 40px;
+                    padding-bottom: 10px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    .rtl{
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: @blue;
+                    }
+                    .rtr{
+                        text-align: right;
+                        a{
+                            font-weight: 500;
+                            color: @blue;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .box-filter-fixed{
+                    position: relative;
+                    max-height: 235px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar-track{
+                        background: url(../img/trtop.svg) top 10px center no-repeat, 
+                        url(../img/trbot.svg) bottom 10px center no-repeat;
+                        border: 1px solid rgba(0, 0, 0, 0.5);
+                        margin: 0 -2px;
+            
+                        background-size: 16px 16px;
+                    }
+                    
+                    &::-webkit-scrollbar
+                    {
+                        width: 22px;
+                        background-color: #F3F3F3;
+                        
+                      
+                    }
+                    &::-webkit-scrollbar-thumb
+                    {
+                       
+                        background:url(../img/track.png) center center no-repeat;
+                        margin:2px;
+                        margin-top: 15px;
+                        height: 40px;
+                    }
+                    .rev-item{
+                        position: relative;
+                        div{
+                            font-size: 20px;
+                            margin-bottom: 15px;
+                            padding-left: 20px;
+                            strong{
+                                font-weight: 500;
+                            }
+                            &.like{
+                                margin-bottom: 35px;
+                                padding-left: 30px;
+                                &::before{
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 10px;
+                                    width: 1px;
+                                    height: 100%;
+                                    background: #000;
+                                    content: "";
+                                }
+                                &::after{
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 10px;
+                                    width: 20px;
+                                    height: 1px;
+                                    background: #000;
+                                    content: "";
+                                }
+                                span{
+                                    color: @blue;
+                                    cursor: pointer;
+                                    font-weight: 400;
+                                    &:hover{
+                                        opacity: 0.7;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 18px;
+                                        height: 18px;
+                                        background: url(../img/loke.svg);
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+    
+    
+    
+            }
+            
+        }
+    }
+    
+    }
+
+
+
+
+
+    
+@media screen and (max-width:680px){
+   
+    .product-default{
+        margin-bottom: 30px;
+        h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            border-bottom: 1px solid #353535;
+            padding-bottom: 15px;
+        }
+        .pr-image{
+            display: block;
+          
+            .prodleft{
+                .slider{
+                    display: block;
+                  
+                    .slider-controll{
+                        .slider-item{
+                            display: none;
+                            margin-bottom: 30px;
+                            &:last-child{
+                                margin-bottom: 0px;
+                            }
+                            img{
+                                border: 2px solid #dedede;
+                                cursor: pointer;
+                                &:hover{
+                                    border: 2px solid #333;
+                                }
+                            }
+                        }
+                    }
+                    .slider-win{}
+                }
+                .proddesktitle{
+                    font-size: 25px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #353535;
+                    padding-bottom: 10px;
+                    margin-bottom: 15px;
+                    margin-top: 40px;
+                }
+                .proddesk{
+                    p{
+                        margin: 20px 0;
+                        a{
+                            color:@yellow;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            .prodright{
+                
+                .brand{
+                    padding-left: 20px;
+                    display: block;
+                    margin-bottom: 20px;
+                    padding-top: 30px;
+                    .brandleft{
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        a{
+                            color: @blue;
+                            text-decoration: none;
+                        }
+                    }
+                    .brandright{
+                        text-align: left;
+                        font-style: italic;
+                        span{
+                            color: #9FD686;
+                        }
+                    }
+                }
+                .prod-price{
+                    padding-left: 0px;
+                    display: block;
+                    margin-bottom: 55px;
+                    .quant{
+                        margin-bottom: 20px;
+                        span{
+                            display: inline-block;
+                            height: 30px;
+                            background: @blue;
+                            color: #FFF;
+                            width:40px;
+                            line-height: 30px;
+                            text-align: center;
+                            font-size: 22px;
+                            cursor: pointer;
+                            vertical-align: middle;
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                            &:active{
+                                background: @yellow;
+                            }
+                        }
+                        input{
+                            border: 1px solid rgba(0, 0, 0, 0.6);
+                            display: inline-block;
+                            vertical-align: middle;
+                            background: #FFF;
+                            text-align: center;
+                            height: 30px;
+                            width: 85px;
+                        }
+                    }
+                    .price{
+                        font-size: 30px;
+                    }
+                }
+                .addcart{
+                    margin-bottom: 20px;
+                    padding-left: 0px;
+                    .baddcart{
+                        background: @blue;
+                        color:#FFF;
+                        font-size: 20px;
+                        position: relative;
+                        width: 100%;
+                        height: 35px;
+                        border: none;
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-right: 0px;
+                        cursor: pointer;  
+                        margin-bottom: 15px;                  
+                        &:hover{opacity: 0.7;}
+                        &:active{background: @yellow;}
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    .addzakl{
+                        display: inline-block;
+                        height: 35px;
+                        padding: 0 0px;
+                        width: 100%;
+                        color: @yellow;
+                        border: 1px solid @blue;
+                        vertical-align: top;
+                        background: #FFF;
+                        cursor: pointer;                    
+                        &:hover{opacity: 0.7;}
+                        &:active{background: @blue;}
+                    }
+                }
+    
+    
+                .block-shipping{
+                    margin-bottom: 40px;
+                    display: block;
+                    padding: 15px;
+                    border: 1px solid rgba(0, 0, 0, 0.6);
+                    font-size: 20px;
+                    div{
+                        margin-bottom: 15px;
+                    }
+                    img{
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        font-size: 16px;
+                        text-decoration: none;
+                        color:@blue;
+                        display: block;
+                        margin-top: 10px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+    
+                .review-head{
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+                    margin-bottom: 40px;
+                    padding-bottom: 10px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    .rtl{
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: @blue;
+                    }
+                    .rtr{
+                        text-align: right;
+                        a{
+                            font-weight: 500;
+                            color: @blue;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .box-filter-fixed{
+                    position: relative;
+                    max-height: 235px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar-track{
+                        background: url(../img/trtop.svg) top 10px center no-repeat, 
+                        url(../img/trbot.svg) bottom 10px center no-repeat;
+                        border: 1px solid rgba(0, 0, 0, 0.5);
+                        margin: 0 -2px;
+            
+                        background-size: 16px 16px;
+                    }
+                    
+                    &::-webkit-scrollbar
+                    {
+                        width: 22px;
+                        background-color: #F3F3F3;
+                        
+                      
+                    }
+                    &::-webkit-scrollbar-thumb
+                    {
+                       
+                        background:url(../img/track.png) center center no-repeat;
+                        margin:2px;
+                        margin-top: 15px;
+                        height: 40px;
+                    }
+                    .rev-item{
+                        position: relative;
+                        div{
+                            font-size: 20px;
+                            margin-bottom: 15px;
+                            padding-left: 20px;
+                            strong{
+                                font-weight: 500;
+                            }
+                            &.like{
+                                margin-bottom: 35px;
+                                padding-left: 30px;
+                                &::before{
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 10px;
+                                    width: 1px;
+                                    height: 100%;
+                                    background: #000;
+                                    content: "";
+                                }
+                                &::after{
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 10px;
+                                    width: 20px;
+                                    height: 1px;
+                                    background: #000;
+                                    content: "";
+                                }
+                                span{
+                                    color: @blue;
+                                    cursor: pointer;
+                                    font-weight: 400;
+                                    &:hover{
+                                        opacity: 0.7;
+                                    }
+                                    &::after{
+                                        content: "";
+                                        display: inline-block;
+                                        width: 18px;
+                                        height: 18px;
+                                        background: url(../img/loke.svg);
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+    
+    
+    
+            }
+            
+        }
+    }
+    
+    
+    
+    }

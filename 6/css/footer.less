@@ -1,0 +1,819 @@
+// main: stylesheet.less
+
+
+footer{
+    background: @blue;
+    padding: 40px 0px 90px 0;
+    margin-top: 40px;
+    .footer{
+        position: relative;
+        .footerlogo{
+            margin-bottom: 25px;
+            img{
+                transition: 0.5s opacity;
+                max-height: 42px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .lfoodfooter{
+                margin-right: 30px;
+            }
+        }
+        .footer-center{
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            grid-gap: 50px;
+            font-size: 20px;
+            .footerleft{
+                .fctitle{
+                    color: #F0BB00;
+                    margin-bottom: 15px;
+                }
+                .fprofile{
+                    display: grid;
+                    grid-template-columns: 1.2fr 1fr;
+                    grid-gap: 30px;
+                    margin-bottom: 20px;
+                    a{
+                        color: #FFF;
+                        text-decoration: none;
+                        line-height: 45px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .emailtitle{
+                        color: #FFF;
+                        text-decoration: none;
+                        margin-bottom: 30px;
+                        margin-top: 11px;
+                    }
+                    form{
+                        position: relative;
+                        input{
+                            background: none;
+                            border: 1px solid rgba(255, 255, 255, 0.6);
+                            height: 36px;
+                            margin-bottom: 10px;
+                            padding:0 10px;
+                            &::placeholder {
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 12px;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                            
+                            &:first-child{
+                                width: 100%;
+                            }
+                            &.finp2{
+                                width: 88%;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        button{
+                            border:none;
+                            background: url(../img/footeremail.svg);
+                            width: 27px;
+                            height: 20px;
+                            position: absolute;
+                            right:0;
+                            bottom:6px;
+                            cursor: pointer;
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+                .fcontact{
+                    p{
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        line-height: 25px;
+                    }
+                    .graph{
+                        display: grid;
+                        grid-template-columns: 1.3fr 1fr;
+                        a{
+                            display: inline-block;
+                            margin-right: 6px;
+                            width: 21px;
+                            height: 21px;
+                            line-height: 21px;
+                            text-align: center;
+                        }
+                        img{
+                            vertical-align: bottom;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerright{
+                border-top: 1px solid #FFF;
+                padding-top: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                margin-top: 23px;
+                .fctitle{
+                    color: #F0BB00;
+                    margin-bottom: 30px;
+                }
+                ul{
+                    list-style-type: none;
+                    li{
+                        padding: 13px 0;
+                        a{
+                            color: #FFF;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partners{
+            position: absolute;
+            left: 0;
+            bottom: -70px;
+            
+            a{
+                display: inline-block;
+                margin-right: 40px;
+                margin-bottom: 20px;
+            }
+            img{
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:1426px){
+    
+footer{
+    background: @blue;
+    padding: 40px 0px 80px 0;
+    margin-top: 40px;
+    .footer{
+        position: relative;
+        .footerlogo{
+            margin-bottom: 25px;
+            img{
+                transition: 0.5s opacity;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .lfoodfooter{
+                margin-right: 30px;
+            }
+        }
+        .footer-center{
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            grid-gap: 50px;
+            font-size: 20px;
+            .footerleft{
+                .fctitle{
+                    color: #F0BB00;
+                    margin-bottom: 15px;
+                }
+                .fprofile{
+                    display: grid;
+                    grid-template-columns: 1.2fr 1fr;
+                    grid-gap: 30px;
+                    margin-bottom: 20px;
+                    a{
+                        color: #FFF;
+                        text-decoration: none;
+                        line-height: 45px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .emailtitle{
+                        color: #FFF;
+                        text-decoration: none;
+                        margin-bottom: 30px;
+                        margin-top: 11px;
+                    }
+                    form{
+                        position: relative;
+                        input{
+                            background: none;
+                            border: 1px solid rgba(255, 255, 255, 0.6);
+                            height: 36px;
+                            margin-bottom: 10px;
+                            padding:0 10px;
+                            &::placeholder {
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 12px;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                            
+                            &:first-child{
+                                width: 100%;
+                            }
+                            &.finp2{
+                                width: 88%;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        button{
+                            border:none;
+                            background: url(../img/footeremail.svg);
+                            width: 27px;
+                            height: 20px;
+                            position: absolute;
+                            right:0;
+                            bottom:6px;
+                            cursor: pointer;
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+                .fcontact{
+                    p{
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        line-height: 25px;
+                    }
+                    .graph{
+                        display: grid;
+                        grid-template-columns: 1.3fr 1fr;
+                        a{
+                            display: inline-block;
+                            margin-right: 6px;
+                            width: 21px;
+                            height: 21px;
+                            line-height: 21px;
+                            text-align: center;
+                        }
+                        img{
+                            vertical-align: bottom;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerright{
+                border-top: 1px solid #FFF;
+                padding-top: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                margin-top: 23px;
+                .fctitle{
+                    color: #F0BB00;
+                    margin-bottom: 30px;
+                }
+                ul{
+                    list-style-type: none;
+                    li{
+                        padding: 13px 0;
+                        a{
+                            color: #FFF;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partners{
+            position: absolute;
+            left: 40px;
+            bottom: -70px;
+            
+            a{
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            img{
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+
+    }
+}
+}
+
+
+@media screen and (max-width:1230px){
+    
+footer{
+    background: @blue;
+    padding: 40px 0px;
+    margin-top: 40px;
+    .footer{
+        position: relative;
+        .footerlogo{
+            margin-bottom: 25px;
+            img{
+                transition: 0.5s opacity;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .lfoodfooter{
+                margin-right: 30px;
+            }
+        }
+        .footer-center{
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            grid-gap: 50px;
+            font-size: 20px;
+            .footerleft{
+                .fctitle{
+                    color: #F0BB00;
+                    margin-bottom: 15px;
+                }
+                .fprofile{
+                    display: grid;
+                    grid-template-columns: 1.2fr 1fr;
+                    grid-gap: 30px;
+                    margin-bottom: 20px;
+                    a{
+                        color: #FFF;
+                        text-decoration: none;
+                        line-height: 45px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    .emailtitle{
+                        color: #FFF;
+                        text-decoration: none;
+                        margin-bottom: 30px;
+                    }
+                    form{
+                        position: relative;
+                        input{
+                            background: none;
+                            border: 1px solid rgba(255, 255, 255, 0.6);
+                            height: 36px;
+                            margin-bottom: 10px;
+                            padding:0 10px;
+                            &::placeholder {
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 12px;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                            
+                            &:first-child{
+                                width: 100%;
+                            }
+                            &.finp2{
+                                width: 88%;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        button{
+                            border:none;
+                            background: url(../img/footeremail.svg);
+                            width: 27px;
+                            height: 20px;
+                            position: absolute;
+                            right:0;
+                            bottom:6px;
+                            cursor: pointer;
+                            &:hover{
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+                .fcontact{
+                    p{
+                        margin-bottom: 15px;
+                        color: #FFF;
+                        line-height: 25px;
+                    }
+                    .graph{
+                        display: grid;
+                        grid-template-columns: 1.3fr 1fr;
+                        a{
+                            display: inline-block;
+                            margin-right: 6px;
+                            width: 21px;
+                            height: 21px;
+                            line-height: 21px;
+                            text-align: center;
+                        }
+                        img{
+                            vertical-align: bottom;
+                            &:hover{
+                                opacity: 0.6;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerright{
+                border-top: 1px solid #FFF;
+                padding-top: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 30px;
+                margin-top: 10px;
+                .fctitle{
+                    color: #F0BB00;
+                    margin-bottom: 30px;
+                }
+                ul{
+                    list-style-type: none;
+                    li{
+                        padding: 13px 0;
+                        a{
+                            color: #FFF;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .partners{
+            position: relative;
+            padding-top: 40px;
+            left: 0px;
+            bottom: 0;
+            
+            a{
+                display: inline-block;
+                margin-right: 40px;
+                margin-bottom: 20px;
+            }
+            img{
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+
+    }
+}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:960px){
+    
+    footer{
+        background: @blue;
+        padding: 40px 10px;
+        margin-top: 40px;
+        .footer{
+            position: relative;
+            .footerlogo{
+                margin-bottom: 25px;
+                img{
+                    transition: 0.5s opacity;
+                    
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+                .lfoodfooter{
+                    margin-right: 30px;
+                }
+            }
+            .footer-center{
+                display: block;
+                .footerleft{
+                    .fctitle{
+                        color: #F0BB00;
+                        margin-bottom: 15px;
+                    }
+                    .fprofile{
+                        display: grid;
+                        grid-template-columns: 1.2fr 1fr;
+                        grid-gap: 30px;
+                        margin-bottom: 20px;
+                        a{
+                            color: #FFF;
+                            text-decoration: none;
+                            line-height: 45px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .emailtitle{
+                            color: #FFF;
+                            text-decoration: none;
+                            margin-bottom: 30px;
+                        }
+                        form{
+                            position: relative;
+                            input{
+                                background: none;
+                                border: 1px solid rgba(255, 255, 255, 0.6);
+                                height: 36px;
+                                margin-bottom: 10px;
+                                padding:0 10px;
+                                &::placeholder {
+                                    font-style: italic;
+                                    font-weight: 300;
+                                    font-size: 12px;
+                                    color: rgba(255, 255, 255, 0.5);
+                                }
+                                
+                                &:first-child{
+                                    width: 100%;
+                                }
+                                &.finp2{
+                                    width: 88%;
+                                    margin-bottom: 0px;
+                                }
+                            }
+                            button{
+                                border:none;
+                                background: url(../img/footeremail.svg);
+                                width: 27px;
+                                height: 20px;
+                                position: absolute;
+                                right:0;
+                                bottom:6px;
+                                cursor: pointer;
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                    }
+                    .fcontact{
+                        p{
+                            margin-bottom: 15px;
+                            color: #FFF;
+                            line-height: 25px;
+                        }
+                        .graph{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 30px;
+                            a{
+                                display: inline-block;
+                                margin-right: 6px;
+                                width: 21px;
+                                height: 21px;
+                                line-height: 21px;
+                                text-align: center;
+                            }
+                            img{
+                                vertical-align: bottom;
+                                &:hover{
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footerright{
+                    border-top: 1px solid #FFF;
+                    padding-top: 25px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 30px;
+                    margin-top: 10px;
+                    .fctitle{
+                        color: #F0BB00;
+                        margin-bottom: 30px;
+                    }
+                    ul{
+                        list-style-type: none;
+                        li{
+                            padding: 13px 0;
+                            a{
+                                color: #FFF;
+                                text-decoration: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .partners{
+                position: relative;
+                padding-top: 40px;
+                left: 0;
+                bottom: 0;
+                text-align: left;
+                
+                a{
+                    display: inline-block;
+                    margin-right: 10px;
+                    margin-left: 0px;
+                    margin-bottom: 10px;
+                }
+                img{
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+    
+        }
+    }
+    }
+
+
+
+
+
+
+
+    
+
+@media screen and (max-width:560px){
+    
+    footer{
+        background: @blue;
+        padding: 40px 10px;
+        margin-top: 40px;
+        font-size: 15px;
+        .footer{
+            position: relative;
+            .footerlogo{
+                margin-bottom: 25px;
+                img{
+                    transition: 0.5s opacity;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+                .lfoodfooter{
+                    margin-right: 30px;
+                }
+            }
+            .footer-center{
+                display: block;
+                font-size: 15px;
+                .footerleft{
+                    .fctitle{
+                        color: #F0BB00;
+                        margin-bottom: 15px;
+                    }
+                    .fprofile{
+                        display: block;
+                        margin-bottom: 20px;
+                        a{
+                            color: #FFF;
+                            text-decoration: none;
+                            line-height: 45px;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        .emailtitle{
+                            color: #FFF;
+                            text-decoration: none;
+                            margin-bottom: 30px;
+                        }
+                        form{
+                            position: relative;
+                            input{
+                                background: none;
+                                border: 1px solid rgba(255, 255, 255, 0.6);
+                                height: 36px;
+                                margin-bottom: 10px;
+                                padding:0 10px;
+                                &::placeholder {
+                                    font-style: italic;
+                                    font-weight: 300;
+                                    font-size: 12px;
+                                    color: rgba(255, 255, 255, 0.5);
+                                }
+                                
+                                &:first-child{
+                                    width: 100%;
+                                }
+                                &.finp2{
+                                    width: 88%;
+                                    margin-bottom: 0px;
+                                }
+                            }
+                            button{
+                                border:none;
+                                background: url(../img/footeremail.svg);
+                                width: 27px;
+                                height: 20px;
+                                position: absolute;
+                                right:0;
+                                bottom:6px;
+                                cursor: pointer;
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                    }
+                    .fcontact{
+                        p{
+                            margin-bottom: 15px;
+                            color: #FFF;
+                            line-height: 25px;
+                        }
+                        .graph{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            grid-gap: 30px;
+                            a{
+                                display: inline-block;
+                                margin-right: 6px;
+                                width: 21px;
+                                height: 21px;
+                                line-height: 21px;
+                                text-align: center;
+                            }
+                            img{
+                                vertical-align: bottom;
+                                &:hover{
+                                    opacity: 0.6;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footerright{
+                    border-top: 1px solid #FFF;
+                    padding-top: 25px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 30px;
+                    margin-top: 10px;
+                    .fctitle{
+                        color: #F0BB00;
+                        margin-bottom: 20px;
+                    }
+                    ul{
+                        list-style-type: none;
+                        li{
+                            padding: 5px 0;
+                            a{
+                                color: #FFF;
+                                text-decoration: none;
+                                font-size: 13px;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .partners{
+                position: relative;
+                padding-top: 40px;
+                left: 0;
+                bottom: 0;
+                text-align: left;
+                
+                a{
+                    display: inline-block;
+                    margin-right: 5px;
+                    margin-left: 0px;
+                    margin-bottom: 10px;
+                }
+                img{
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+            }
+    
+        }
+    }
+}
